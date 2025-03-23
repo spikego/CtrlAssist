@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CtrlAssist</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/ctrlassist.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function checkScreenSize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            console.log(`Screen width: ${width}, Screen height: ${height}`);
+        }
+
+        window.addEventListener('resize', checkScreenSize);
+        window.addEventListener('load', checkScreenSize);
+
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('date-time').textContent = now.toLocaleString();
+        }
+
+        setInterval(updateDateTime, 1000);
+
+        function fetchWeather() {
+            fetch('https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=YOUR_LOCATION')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('weather').textContent = `${data.current.temp_c}°C, ${data.current.condition.text}`;
+                });
+        }
+
+        window.addEventListener('load', fetchWeather);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>CtrlAssist</h1>
+        <div class="dashboard">
+            <div class="window" id="process-window">
+                <h2>Processes</h2>
+                <ul id="process-list">
+                    {% for process in processes %}
+                        <li><a href="#" onclick="loadProcess({{ process['pid'] }})">{{ process['name'] }} (PID: {{ process['pid'] }})</a></li>
+                    {% endfor %}
+                </ul>
+                <button onclick="refreshProcesses()">Refresh Processes</button>
+            </div>
+            <div class="window" id="scan-window">
+                <h2>Scan Memory</h2>
+                <label for="scan-type">Scan Type:</label>
+                <select id="scan-type">
+                    <option value="exact">Exact Value</option>
+                    <option value="range">Value Range</option>
+                </select>
+                <label for="value-type">Value Type:</label>
+                <select id="value-type">
+                    <option value="int">Integer</option>
+                    <option value="float">Float</option>
+                    <option value="string">String</option>
+                </select>
+                <input type="text" id="scan-value" placeholder="Value to scan">
+                <button onclick="scanMemory()">Scan</button>
+                <ul id="scan-results"></ul>
+            </div>
+            <div class="window" id="modify-window">
+                <h2>Modify Memory</h2>
+                <input type="text" id="memory-address" placeholder="Memory Address">
+                <input type="text" id="memory-value" placeholder="New Value">
+                <button onclick="modifyMemory()">Modify Memory</button>
+            </div>
+            <div class="window" id="control-window">
+    <h2>Game Control</h2>
+    <label for="game-id">Game ID:</label>
+    <input type="text" id="game-id" placeholder="Enter Game ID" size="30">
+    <label for="game-speed">Game Speed:</label>
+    <input type="range" id="game-speed" min="0.1" max="3" step="0.1" value="1" oninput="updateSpeedValue(this.value)">
+    <span id="speed-value">1</span>
+    <button onclick="changeGameSpeed()">Change Speed</button>
+    <label for="function-content">Function Content:</label>
+    <textarea id="function-content" rows="15" cols="80" placeholder="Enter function content"></textarea>
+    <button onclick="updateFunctionContent()">Update Function</button>
+</div>
+
+            <div class="window" id="script-upload-window">
+    <h2>Upload Script</h2>
+    <input type="file" id="script-file" accept=".lua,.py,.kt">
+    <button onclick="uploadScriptFile()">Upload Script</button>
+    <pre id="upload-result"></pre>
+</div>
+        </div>
+        <div class="status-bar">
+            <div id="date-time"></div>
+            <div id="weather"></div>
+            <div id="system-status">
+                <div id="cpu-status">CPU: </div>
+                <div id="gpu-status">GPU: </div>
+                <div id="memory-status">Memory: </div>
+                <div id="disk-status">Disk: </div>
+            </div>
+            <div id="selected-process">Selected Process: None</div>
+            <div id="company-name">SPIKE LLC</div>
+        </div>
+    </div>
+
+
+    <script>
+        function loadProcess(pid) {
+            fetch(`/process/${pid}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('selected-process').textContent = `Selected Process: ${data.name} (PID: ${data.pid})`;
+                    document.getElementById('cpu-status').textContent = `CPU: ${data.cpu_usage}%`;
+                    document.getElementById('gpu-status').textContent = `GPU: ${data.gpu_usage}%`;
+                    document.getElementById('memory-status').textContent = `Memory: ${data.memory_usage}%`;
+                    document.getElementById('disk-status').textContent = `Disk: ${data.disk_usage}%`;
+                });
+        }
+
+        function scanMemory() {
+            const scanType = document.getElementById('scan-type').value;
+            const valueType = document.getElementById('value-type').value;
+            const scanValue = document.getElementById('scan-value').value;
+
+            fetch('/scan_memory', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ scanType, valueType, scanValue })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const scanResults = document.getElementById('scan-results');
+                scanResults.innerHTML = '';
+                data.results.forEach(result => {
+                    const li = document.createElement('li');
+                    li.textContent = `Address: ${result.address}, Value: ${result.value}`;
+                    scanResults.appendChild(li);
+                });
+            });
+        }
+
+        function modifyMemory() {
+            const address = parseInt(document.getElementById('memory-address').value, 16);
+            const value = document.getElementById('memory-value').value;
+
+            fetch('/modify_memory', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ address, value })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Memory modified successfully');
+            });
+        }
+
+        function togglePauseGame() {
+            const pause = document.getElementById('pause-game').checked;
+            fetch('/toggle_pause', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ pause })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(`Game ${pause ? 'paused' : 'resumed'} successfully`);
+            });
+        }
+
+        function changeGameSpeed(gameId, speed) {
+    fetch(`/change_speed`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ gameId, speed })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(`Game speed changed to ${speed}x`);
+    });
+}
+
+        function refreshProcesses() {
+            location.reload();
+        }
+
+        function updateSpeedValue(value) {
+    document.getElementById('speed-value').textContent = value;
+}
+
+function changeGameSpeed() {
+    const gameId = document.getElementById('game-id').value;
+    const speed = document.getElementById('game-speed').value;
+    fetch('/change_speed', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ gameId, speed })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(`Game speed changed to ${speed}x for game ID ${gameId}`);
+    });
+}
+
+        function updateFunctionContent() {
+    const functionContent = document.getElementById('function-content').value;
+    fetch('/update_function_content', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ functionContent })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert('Function content updated successfully');
+    });
+}
+
+        function uploadScriptFile() {
+    const fileInput = document.getElementById('script-file');
+    const file = fileInput.files[0];
+    const formData = new FormData();
+    formData.append('scriptFile', file);
+
+    fetch('/upload_script', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('upload-result').textContent = data.message;
+    });
+}
+
+
+    </script>
+</body>
+</html>

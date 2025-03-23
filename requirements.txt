@@ -1,0 +1,6 @@
+Flask==2.0.3
+psutil==5.8.0
+ctypes
+struct
+subprocess
+werkzeug
