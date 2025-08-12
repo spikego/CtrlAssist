@@ -1,0 +1,1273 @@
+2025-08-11 13:07:05,959 - __main__ - INFO - Application starting...
+2025-08-11 13:07:09,400 - __main__ - INFO - Application starting...
+2025-08-11 13:07:09,400 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:07:09,425 - __main__ - INFO - Application created successfully
+2025-08-11 13:07:11,046 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:07:11,047 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:11:46,107 - __main__ - INFO - Application starting...
+2025-08-11 13:11:48,054 - __main__ - INFO - Application starting...
+2025-08-11 13:11:48,054 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:11:48,091 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:11:48,091 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:23:12,957 - __main__ - INFO - Application starting...
+2025-08-11 13:23:15,890 - __main__ - INFO - Application starting...
+2025-08-11 13:23:15,890 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:23:16,015 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:23:16,015 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:26:33,568 - __main__ - INFO - Application starting...
+2025-08-11 13:26:36,204 - __main__ - INFO - Application starting...
+2025-08-11 13:26:36,204 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:26:36,308 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:26:36,309 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:42:27,070 - __main__ - INFO - Application starting...
+2025-08-11 13:42:31,350 - __main__ - INFO - Application starting...
+2025-08-11 13:42:31,350 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:42:31,481 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:42:31,482 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:43:18,714 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:43:18] "GET / HTTP/1.1" 200 -
+2025-08-11 13:43:18,756 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:43:18] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 13:43:18,827 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:43:18] "GET /static/images/ctrlassist.png HTTP/1.1" 200 -
+2025-08-11 13:43:55,519 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:43:55] "GET /process/27188 HTTP/1.1" 200 -
+2025-08-11 13:44:10,437 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:10] "GET /process/948 HTTP/1.1" 200 -
+2025-08-11 13:44:11,466 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:11] "GET /process/948 HTTP/1.1" 200 -
+2025-08-11 13:44:11,674 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:11] "GET /process/864 HTTP/1.1" 200 -
+2025-08-11 13:44:12,494 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:12] "GET /process/948 HTTP/1.1" 200 -
+2025-08-11 13:44:13,525 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:13] "GET /process/948 HTTP/1.1" 200 -
+2025-08-11 13:44:20,794 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:20] "GET /process/24768 HTTP/1.1" 200 -
+2025-08-11 13:44:21,822 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:21] "GET /process/24768 HTTP/1.1" 200 -
+2025-08-11 13:44:22,852 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:22] "GET /process/24768 HTTP/1.1" 200 -
+2025-08-11 13:44:28,330 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:28] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:44:51,006 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:51] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:44:51,327 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:51] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:44:51,511 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:51] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:44:55,095 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:55] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:44:55,302 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:55] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:44:55,503 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:55] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:44:56,984 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:44:56] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 13:45:01,198 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:45:01] "POST /stop_overlay HTTP/1.1" 200 -
+2025-08-11 13:45:02,970 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:45:02] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 13:45:04,918 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:45:04] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:45:05,134 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:45:05] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:45:05,327 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:45:05] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:47:23,843 - __main__ - INFO - Application starting...
+2025-08-11 13:47:27,052 - __main__ - INFO - Application starting...
+2025-08-11 13:47:27,053 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:47:27,152 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:47:27,152 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:47:30,435 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:30] "GET / HTTP/1.1" 200 -
+2025-08-11 13:47:30,465 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:47:43,304 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:43] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:47:44,964 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:44] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:47:46,397 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:46] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:47:47,434 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:47] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:47:47,718 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:47] "POST /exit_app HTTP/1.1" 200 -
+2025-08-11 13:47:56,721 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:56] "GET / HTTP/1.1" 200 -
+2025-08-11 13:47:56,761 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:47:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:48:03,758 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:48:03] "POST /exit_app HTTP/1.1" 200 -
+2025-08-11 13:59:17,210 - __main__ - INFO - Application starting...
+2025-08-11 13:59:19,848 - __main__ - INFO - Application starting...
+2025-08-11 13:59:19,848 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:59:19,890 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:59:19,890 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:59:28,571 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:28] "GET / HTTP/1.1" 200 -
+2025-08-11 13:59:28,611 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:28] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 13:59:28,642 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:28] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:59:37,370 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:37] "GET / HTTP/1.1" 200 -
+2025-08-11 13:59:37,377 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:37] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 13:59:37,410 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:37] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:59:57,731 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:57] "GET / HTTP/1.1" 200 -
+2025-08-11 13:59:57,738 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:59:57,767 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:57] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:59:57,941 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:57] "GET / HTTP/1.1" 200 -
+2025-08-11 13:59:57,948 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:59:57,977 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:57] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:59:58,158 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:58] "GET / HTTP/1.1" 200 -
+2025-08-11 13:59:58,165 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:59:58,196 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:58] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:00:20,087 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "GET / HTTP/1.1" 200 -
+2025-08-11 14:00:20,095 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:00:20,132 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:00:20,464 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "GET / HTTP/1.1" 200 -
+2025-08-11 14:00:20,471 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:00:20,513 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:00:20,656 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "GET / HTTP/1.1" 200 -
+2025-08-11 14:00:20,665 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:00:20,708 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:00:20,857 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "GET / HTTP/1.1" 200 -
+2025-08-11 14:00:20,865 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:00:20,905 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:20] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:00:35,775 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:35] "GET / HTTP/1.1" 200 -
+2025-08-11 14:00:35,789 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:00:35,901 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:35] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:00:35,990 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:35] "GET / HTTP/1.1" 200 -
+2025-08-11 14:00:36,003 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:00:36,105 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:36] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:00:36,159 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:36] "GET / HTTP/1.1" 200 -
+2025-08-11 14:00:36,166 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:00:36,227 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:00:36] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:01:25,992 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:01:25] "GET / HTTP/1.1" 200 -
+2025-08-11 14:01:26,000 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:01:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:01:26,032 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:01:26] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:06:50,100 - __main__ - INFO - Application starting...
+2025-08-11 14:06:52,132 - __main__ - INFO - Application starting...
+2025-08-11 14:06:52,132 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:06:52,158 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:06:52,158 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:06:55,514 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:06:55] "GET / HTTP/1.1" 200 -
+2025-08-11 14:06:55,552 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:06:55] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 14:06:55,619 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:06:55] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:09:00,500 - __main__ - INFO - Application starting...
+2025-08-11 14:09:04,062 - __main__ - INFO - Application starting...
+2025-08-11 14:09:04,063 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:09:04,086 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:09:04,086 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:09:07,433 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:09:07] "GET / HTTP/1.1" 200 -
+2025-08-11 14:09:07,462 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:09:07] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 14:09:10,235 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:09:10] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:09:10,572 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:09:10] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:09:22,214 - app - ERROR - Exception on /process/0 [GET]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\psutil\_pswindows.py", line 673, in wrapper
+    return fun(self, *args, **kwargs)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\psutil\_pswindows.py", line 937, in threads
+    rawlist = cext.proc_threads(self.pid)
+PermissionError: [Errno 13] assume access denied (originated from forced for PID 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 38, in process
+    for thread in process.threads():
+                  ~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\psutil\__init__.py", line 937, in threads
+    return self._proc.threads()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\psutil\_pswindows.py", line 675, in wrapper
+    raise convert_oserror(err, pid=self.pid, name=self._name) from err
+psutil.AccessDenied: (pid=0)
+2025-08-11 14:09:22,232 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:09:22] "[35m[1mGET /process/0 HTTP/1.1[0m" 500 -
+2025-08-11 14:09:59,349 - __main__ - INFO - Application starting...
+2025-08-11 14:10:01,539 - __main__ - INFO - Application starting...
+2025-08-11 14:10:01,540 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:10:01,574 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:10:01,574 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:10:04,926 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:10:04] "GET / HTTP/1.1" 200 -
+2025-08-11 14:10:04,940 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:10:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:10:14,959 - __main__ - INFO - Application starting...
+2025-08-11 14:10:17,137 - __main__ - INFO - Application starting...
+2025-08-11 14:10:17,137 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:10:17,170 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:10:17,170 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:10:20,532 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:10:20] "GET / HTTP/1.1" 200 -
+2025-08-11 14:10:20,584 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:10:20] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 14:17:07,163 - __main__ - INFO - Application starting...
+2025-08-11 14:17:09,820 - __main__ - INFO - Application starting...
+2025-08-11 14:17:09,820 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:17:09,849 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:17:09,849 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:17:13,219 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:13] "GET / HTTP/1.1" 200 -
+2025-08-11 14:17:13,294 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:13] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 14:17:22,462 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:22] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:17:23,471 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:23] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 14:17:27,185 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:27] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:17:28,224 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:28] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:17:29,259 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:29] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:17:30,263 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:30] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:17:30,294 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:17:30] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:18:32,003 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:18:32] "GET / HTTP/1.1" 200 -
+2025-08-11 14:18:32,012 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:18:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:18:32,049 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:18:32] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:18:55,903 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:18:55] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:18:57,062 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:18:57] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:19:00,388 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:19:00] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:21:50,639 - __main__ - INFO - Application starting...
+2025-08-11 14:21:52,663 - __main__ - INFO - Application starting...
+2025-08-11 14:21:52,663 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:21:52,693 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:21:52,693 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:21:56,028 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:21:56] "GET / HTTP/1.1" 200 -
+2025-08-11 14:21:56,076 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:21:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:21:58,130 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:21:58] "GET / HTTP/1.1" 200 -
+2025-08-11 14:21:58,136 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:21:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:21:58,168 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:21:58] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:22:06,352 - __main__ - INFO - Application starting...
+2025-08-11 14:22:08,667 - __main__ - INFO - Application starting...
+2025-08-11 14:22:08,668 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:22:08,694 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:22:08,694 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:22:12,057 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:12] "GET / HTTP/1.1" 200 -
+2025-08-11 14:22:12,103 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:22:17,772 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:17] "GET /process/4 HTTP/1.1" 200 -
+2025-08-11 14:22:18,040 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:18] "GET /process/4 HTTP/1.1" 200 -
+2025-08-11 14:22:28,425 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:28] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:22:39,908 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:39] "GET /process/8464 HTTP/1.1" 200 -
+2025-08-11 14:22:45,303 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:45] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:22:46,311 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:46] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 14:22:48,510 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:22:48] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:23:24,927 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:23:24] "POST /start_overlay HTTP/1.1" 200 -
+2025-08-11 14:23:28,999 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:23:28] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:23:29,825 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:23:29] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:23:30,127 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:23:30] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:24:40,363 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:24:40] "GET / HTTP/1.1" 200 -
+2025-08-11 14:24:40,370 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:24:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:24:40,404 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:24:40] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:25:05,191 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:25:05] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:25:36,204 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:25:36] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:25:42,395 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:25:42] "GET /process/356 HTTP/1.1" 200 -
+2025-08-11 14:25:43,187 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:25:43] "GET /process/356 HTTP/1.1" 200 -
+2025-08-11 14:25:47,934 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:25:47] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:26:02,848 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:02] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 14:26:17,896 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:17] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:26:26,735 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:26] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:26:26,935 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:26] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:26:27,128 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:27] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:26:27,855 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:27] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 14:26:32,303 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 279, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 119, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 14:26:32,332 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:32] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 14:26:32,857 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 279, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 119, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 14:26:32,859 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:32] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 14:26:33,063 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 279, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 119, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 14:26:33,067 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:33] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 14:26:33,255 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 279, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 119, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 14:26:33,257 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:33] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 14:26:41,435 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:41] "GET / HTTP/1.1" 200 -
+2025-08-11 14:26:41,443 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:26:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:27:27,078 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:27:27] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:27:36,396 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:27:36] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:27:41,656 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:27:41] "GET /process/20164 HTTP/1.1" 200 -
+2025-08-11 14:27:46,367 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:27:46] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 14:28:00,439 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:00] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:06,111 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:06] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:06,295 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:06] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:06,495 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:06] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:07,198 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:07] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 14:28:10,991 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:10] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:19,447 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:19] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:19,663 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:19] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:19,847 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:19] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:28,515 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:28] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:28:30,825 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:30] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:31,079 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:31] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:31,327 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:31] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:28:37,343 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 279, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 119, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 14:28:37,350 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:37] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 14:28:37,943 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 279, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 119, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 14:28:37,945 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:37] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 14:28:38,647 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:38] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 14:28:41,975 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:41] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:28:42,983 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:42] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 14:28:44,535 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:44] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:28:48,689 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:48] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 14:28:54,785 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:54] "GET /process/20164 HTTP/1.1" 200 -
+2025-08-11 14:28:55,685 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:55] "GET /process/20164 HTTP/1.1" 200 -
+2025-08-11 14:28:55,721 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:28:55] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:29:06,055 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:29:06] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:29:06,288 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:29:06] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:29:06,497 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:29:06] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:29:07,247 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:29:07] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:29:07,498 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:29:07] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:29:14,761 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:29:14] "POST /exit_app HTTP/1.1" 200 -
+2025-08-11 14:51:19,597 - __main__ - INFO - Application starting...
+2025-08-11 14:51:21,944 - __main__ - INFO - Application starting...
+2025-08-11 14:51:21,945 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:51:21,997 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:51:21,997 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:52:12,393 - __main__ - INFO - Application starting...
+2025-08-11 14:52:14,369 - __main__ - INFO - Application starting...
+2025-08-11 14:52:14,370 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:52:14,398 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:52:14,399 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:03:43,678 - __main__ - INFO - Application starting...
+2025-08-11 15:03:46,385 - __main__ - INFO - Application starting...
+2025-08-11 15:03:46,385 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:03:46,418 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:03:46,418 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:03:49,824 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:03:49] "GET / HTTP/1.1" 200 -
+2025-08-11 15:03:49,887 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:03:49] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 15:04:07,689 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:04:07] "GET /process/16564 HTTP/1.1" 200 -
+2025-08-11 15:04:13,561 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:04:13] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 15:04:45,451 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:04:45] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:04:48,443 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 310, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 198, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 15:04:48,447 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:04:48] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 15:04:48,833 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:04:48] "POST /start_overlay HTTP/1.1" 200 -
+2025-08-11 15:04:50,995 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:04:50] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:05:20,541 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:05:20] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:05:51,433 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:05:51] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:05:52,952 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:05:52] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:05:53,151 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:05:53] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:05:53,352 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:05:53] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:05:53,578 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:05:53] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:05:54,930 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:05:54] "GET / HTTP/1.1" 200 -
+2025-08-11 15:06:18,661 - __main__ - INFO - Application starting...
+2025-08-11 15:06:21,190 - __main__ - INFO - Application starting...
+2025-08-11 15:06:21,191 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:06:21,228 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:06:21,229 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:06:23,351 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:06:23] "GET / HTTP/1.1" 200 -
+2025-08-11 15:06:23,405 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:06:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:06:23,516 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:06:23] "GET /static/images/ctrlassist.png HTTP/1.1" 200 -
+2025-08-11 15:06:24,578 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:06:24] "GET / HTTP/1.1" 200 -
+2025-08-11 15:06:24,595 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:06:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:06:28,997 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:06:28] "GET /process/16564 HTTP/1.1" 200 -
+2025-08-11 15:06:38,164 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:06:38] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:09:16,747 - __main__ - INFO - Application starting...
+2025-08-11 15:09:18,868 - __main__ - INFO - Application starting...
+2025-08-11 15:09:18,869 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:09:18,908 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:09:18,908 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:09:22,277 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:09:22] "GET / HTTP/1.1" 200 -
+2025-08-11 15:09:22,330 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:09:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:09:28,546 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:09:28] "GET /process/16564 HTTP/1.1" 200 -
+2025-08-11 15:09:35,475 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:09:35] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:09:50,296 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:09:50] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:12:46,249 - __main__ - INFO - Application starting...
+2025-08-11 15:12:49,159 - __main__ - INFO - Application starting...
+2025-08-11 15:12:49,160 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:12:49,190 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:12:49,190 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:12:52,565 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:12:52] "GET / HTTP/1.1" 200 -
+2025-08-11 15:12:52,583 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:12:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:13:05,089 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:13:05] "GET /process/16564 HTTP/1.1" 200 -
+2025-08-11 15:13:06,464 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:13:06] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:17:48,531 - __main__ - INFO - Application starting...
+2025-08-11 15:17:50,686 - __main__ - INFO - Application starting...
+2025-08-11 15:17:50,687 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:17:50,716 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:17:50,716 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:17:54,072 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:17:54] "GET / HTTP/1.1" 200 -
+2025-08-11 15:17:54,100 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:17:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:17:57,731 - __main__ - INFO - Application starting...
+2025-08-11 15:18:00,124 - __main__ - INFO - Application starting...
+2025-08-11 15:18:00,124 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:18:00,152 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:18:00,152 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:18:03,516 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:18:03] "GET / HTTP/1.1" 200 -
+2025-08-11 15:18:03,561 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:18:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:18:56,264 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:18:56] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 15:18:59,339 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:18:59] "GET /process/10404 HTTP/1.1" 200 -
+2025-08-11 15:19:02,500 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:19:02] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:21:17,710 - __main__ - INFO - Application starting...
+2025-08-11 15:21:19,929 - __main__ - INFO - Application starting...
+2025-08-11 15:21:19,930 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:21:19,960 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:21:19,960 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:21:23,284 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:21:23] "GET / HTTP/1.1" 200 -
+2025-08-11 15:21:23,336 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:21:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:21:40,302 - __main__ - INFO - Application starting...
+2025-08-11 15:21:42,460 - __main__ - INFO - Application starting...
+2025-08-11 15:21:42,460 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:21:42,487 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:21:42,488 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:21:45,859 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:21:45] "GET / HTTP/1.1" 200 -
+2025-08-11 15:21:45,901 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:21:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:21:45,970 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:21:45] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 15:21:53,350 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:21:53] "GET /process/10404 HTTP/1.1" 200 -
+2025-08-11 15:21:55,955 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:21:55] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 15:27:10,325 - __main__ - INFO - Application starting...
+2025-08-11 15:27:13,573 - __main__ - INFO - Application starting...
+2025-08-11 15:27:13,574 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:27:13,607 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:27:13,607 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:27:16,971 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:27:16] "GET / HTTP/1.1" 200 -
+2025-08-11 15:27:16,987 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:27:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:27:28,019 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:27:28] "GET /process/10404 HTTP/1.1" 200 -
+2025-08-11 15:28:04,041 - __main__ - INFO - Application starting...
+2025-08-11 15:28:06,986 - __main__ - INFO - Application starting...
+2025-08-11 15:28:06,986 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:28:07,015 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:28:07,016 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:28:10,350 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:28:10] "GET / HTTP/1.1" 200 -
+2025-08-11 15:28:10,388 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:28:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:28:26,783 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:28:26] "GET /process/10404 HTTP/1.1" 200 -
+2025-08-11 15:28:53,900 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:28:53] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:31:15,656 - __main__ - INFO - Application starting...
+2025-08-11 15:31:18,132 - __main__ - INFO - Application starting...
+2025-08-11 15:31:18,133 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:31:18,169 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:31:18,169 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:31:23,184 - __main__ - INFO - Application starting...
+2025-08-11 15:31:26,100 - __main__ - INFO - Application starting...
+2025-08-11 15:31:26,100 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:31:26,128 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:31:26,129 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:31:29,496 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:31:29] "GET / HTTP/1.1" 200 -
+2025-08-11 15:31:29,555 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:31:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:31:34,253 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:31:34] "GET / HTTP/1.1" 200 -
+2025-08-11 15:31:34,260 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:31:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:31:34,293 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:31:34] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 15:31:45,497 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:31:45] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 15:31:51,571 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:31:51] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:05,550 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:05] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:13,652 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:13] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:23,461 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:23] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:23,980 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:23] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:24,244 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:24] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:24,763 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:24] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:24,981 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:24] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:25,543 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:25] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:26,891 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:26] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 15:32:27,275 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:27] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 15:32:27,803 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:27] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:28,036 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:28] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:29,563 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:29] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:35,772 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:35] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:55,222 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:55] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:32:59,715 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:32:59] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:33:06,176 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:06] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 15:33:06,378 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:06] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 15:33:08,171 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:08] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:33:15,141 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:15] "POST /start_overlay HTTP/1.1" 200 -
+2025-08-11 15:33:24,771 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:24] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:33:29,739 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:29] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 15:33:34,188 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:34] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 15:33:34,452 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:34] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 15:33:35,883 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:35] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 15:33:38,019 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 310, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 198, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 15:33:38,022 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:38] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 15:33:39,179 - app - ERROR - Exception on /stop_overlay [POST]
+Traceback (most recent call last):
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\routes.py", line 310, in stop_overlay
+    overlay_renderer.stop_rendering()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\ÎÄµµe°æ\learn\CtrlAssist\app\overlay_engine.py", line 198, in stop_rendering
+    self.overlay.stop_rendering()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowOverlay' object has no attribute 'stop_rendering'
+2025-08-11 15:33:39,181 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:39] "[35m[1mPOST /stop_overlay HTTP/1.1[0m" 500 -
+2025-08-11 15:33:39,963 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:39] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:33:40,211 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:40] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:33:40,622 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:33:40] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:34:22,463 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:34:22] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 15:34:23,494 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:34:23] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 15:34:24,527 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:34:24] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 15:34:29,026 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:34:29] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 15:34:37,074 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:34:37] "GET /process/9724 HTTP/1.1" 200 -
+2025-08-11 15:34:41,908 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:34:41] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:35:00,101 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:35:00] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:35:04,615 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:35:04] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:40:20,052 - __main__ - INFO - Application starting...
+2025-08-11 15:40:22,312 - __main__ - INFO - Application starting...
+2025-08-11 15:40:22,313 - __main__ - INFO - Starting application initialization...
+2025-08-11 15:40:22,348 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 15:40:22,348 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 15:40:25,662 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:40:25] "GET / HTTP/1.1" 200 -
+2025-08-11 15:40:25,692 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:40:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:40:31,553 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:40:31] "GET / HTTP/1.1" 200 -
+2025-08-11 15:40:31,598 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:40:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 15:40:31,630 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:40:31] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 15:40:43,530 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:40:43] "GET /process/9724 HTTP/1.1" 200 -
+2025-08-11 15:41:01,592 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:41:01] "GET /process/9724 HTTP/1.1" 200 -
+2025-08-11 15:41:07,371 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:41:07] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:04:28,487 - __main__ - INFO - Application starting...
+2025-08-11 16:04:31,766 - __main__ - INFO - Application starting...
+2025-08-11 16:04:31,767 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:04:31,804 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:04:31,804 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:04:35,217 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:04:35] "GET / HTTP/1.1" 200 -
+2025-08-11 16:04:35,311 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:04:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:04:54,825 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:04:54] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 16:05:03,440 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:05:03] "GET /process/9724 HTTP/1.1" 200 -
+2025-08-11 16:05:04,060 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:05:04] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:05:25,797 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:05:25] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:05:44,876 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:05:44] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:12:02,377 - __main__ - INFO - Application starting...
+2025-08-11 16:12:04,720 - __main__ - INFO - Application starting...
+2025-08-11 16:12:04,720 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:12:04,752 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:12:04,753 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:12:08,032 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:12:08] "GET / HTTP/1.1" 200 -
+2025-08-11 16:12:08,080 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:12:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:12:15,877 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:12:15] "GET /process/9724 HTTP/1.1" 200 -
+2025-08-11 16:12:17,694 - app.kernel32_inject - INFO - Speed control started for process 9724 at 2.3x
+2025-08-11 16:12:17,694 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:12:17] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:14:13,922 - __main__ - INFO - Application starting...
+2025-08-11 16:14:16,109 - __main__ - INFO - Application starting...
+2025-08-11 16:14:16,109 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:14:16,140 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:14:16,140 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:14:19,488 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:14:19] "GET / HTTP/1.1" 200 -
+2025-08-11 16:14:19,528 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:14:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:14:31,402 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:14:31] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 16:14:33,844 - app.kernel32_inject - ERROR - Failed to get LoadLibraryA address
+2025-08-11 16:14:33,845 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:14:33] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:17:36,580 - __main__ - INFO - Application starting...
+2025-08-11 16:17:38,503 - __main__ - INFO - Application starting...
+2025-08-11 16:17:38,504 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:17:38,545 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:17:38,545 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:17:41,855 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:17:41] "GET / HTTP/1.1" 200 -
+2025-08-11 16:17:41,898 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:17:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:17:51,052 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:17:51] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 16:17:52,861 - app.kernel32_inject - ERROR - Failed to get LoadLibraryA address
+2025-08-11 16:17:52,861 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:17:52] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:18:27,003 - __main__ - INFO - Application starting...
+2025-08-11 16:18:28,979 - __main__ - INFO - Application starting...
+2025-08-11 16:18:28,979 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:18:29,011 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:18:29,012 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:18:32,332 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:18:32] "GET / HTTP/1.1" 200 -
+2025-08-11 16:18:32,382 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:18:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:18:43,843 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:18:43] "GET /process/6520 HTTP/1.1" 200 -
+2025-08-11 16:18:46,685 - app.kernel32_inject - ERROR - Failed to get LoadLibraryA address
+2025-08-11 16:18:46,685 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:18:46] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:18:55,837 - app.kernel32_inject - ERROR - Failed to get LoadLibraryA address
+2025-08-11 16:18:55,838 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:18:55] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:20:11,401 - __main__ - INFO - Application starting...
+2025-08-11 16:20:13,416 - __main__ - INFO - Application starting...
+2025-08-11 16:20:13,417 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:20:13,448 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:20:13,448 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:20:16,787 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:16] "GET / HTTP/1.1" 200 -
+2025-08-11 16:20:16,827 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:20:31,653 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:31] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 16:20:36,551 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:36] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 16:20:41,070 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:41] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:20:49,494 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:49] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:20:51,500 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:51] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:20:53,499 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:53] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:20:55,501 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:55] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:20:57,510 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:57] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:20:59,108 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:20:59] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:21:11,533 - app.kernel32_inject - ERROR - Failed to write DLL path to remote memory
+2025-08-11 16:21:11,533 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:21:11] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:21:17,613 - app.kernel32_inject - ERROR - Failed to write DLL path to remote memory
+2025-08-11 16:21:17,614 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:21:17] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:22:25,118 - __main__ - INFO - Application starting...
+2025-08-11 16:22:27,178 - __main__ - INFO - Application starting...
+2025-08-11 16:22:27,178 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:22:27,209 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:22:27,209 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:22:30,558 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:22:30] "GET / HTTP/1.1" 200 -
+2025-08-11 16:22:30,600 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:22:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:22:43,125 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:22:43] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:22:45,133 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:22:45] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:23:32,101 - __main__ - INFO - Application starting...
+2025-08-11 16:23:35,867 - __main__ - INFO - Application starting...
+2025-08-11 16:23:35,867 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:23:35,899 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:23:35,900 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:23:39,271 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:23:39] "GET / HTTP/1.1" 200 -
+2025-08-11 16:23:39,320 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:23:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:23:46,739 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:23:46] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:23:49,317 - app.kernel32_inject - ERROR - Failed to write DLL path to remote memory
+2025-08-11 16:23:49,317 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:23:49] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:23:56,848 - app.kernel32_inject - ERROR - Failed to write DLL path to remote memory
+2025-08-11 16:23:56,848 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:23:56] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:24:35,738 - __main__ - INFO - Application starting...
+2025-08-11 16:24:37,845 - __main__ - INFO - Application starting...
+2025-08-11 16:24:37,846 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:24:37,878 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:24:37,878 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:24:41,249 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:24:41] "GET / HTTP/1.1" 200 -
+2025-08-11 16:24:41,290 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:24:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:24:43,226 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:24:43] "GET / HTTP/1.1" 200 -
+2025-08-11 16:24:43,233 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:24:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:24:43,266 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:24:43] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:24:46,802 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:24:46] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:24:49,797 - app.kernel32_inject - ERROR - Failed to write DLL path to remote memory
+2025-08-11 16:24:49,798 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:24:49] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:28:47,191 - __main__ - INFO - Application starting...
+2025-08-11 16:28:51,553 - __main__ - INFO - Application starting...
+2025-08-11 16:28:51,553 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:28:51,580 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:28:51,580 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:28:54,915 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:28:54] "GET / HTTP/1.1" 200 -
+2025-08-11 16:28:54,930 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:28:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:29:03,355 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:29:03] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:29:05,573 - app.kernel32_inject - ERROR - Failed to write DLL path to remote memory
+2025-08-11 16:29:05,573 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:29:05] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:30:10,094 - __main__ - INFO - Application starting...
+2025-08-11 16:30:12,346 - __main__ - INFO - Application starting...
+2025-08-11 16:30:12,347 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:30:12,386 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:30:12,386 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:30:15,787 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:15] "GET / HTTP/1.1" 200 -
+2025-08-11 16:30:15,817 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:30:22,331 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:22] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:30:23,126 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:23] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:30:23,545 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:23] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:30:25,621 - app.kernel32_inject - ERROR - Failed to write DLL path to remote memory
+2025-08-11 16:30:25,621 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:25] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:30:33,136 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:33] "GET / HTTP/1.1" 200 -
+2025-08-11 16:30:33,174 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:30:33,205 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:33] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:30:41,478 - __main__ - INFO - Application starting...
+2025-08-11 16:30:43,849 - __main__ - INFO - Application starting...
+2025-08-11 16:30:43,849 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:30:43,876 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:30:43,877 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:30:46,010 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:46] "GET / HTTP/1.1" 200 -
+2025-08-11 16:30:46,049 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:30:46,077 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:46] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:30:47,213 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:47] "GET / HTTP/1.1" 200 -
+2025-08-11 16:30:47,227 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:30:50,493 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:50] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:30:52,821 - app.kernel32_inject - INFO - Attempting to inject DLL into process 16468 with speed 1.0x
+2025-08-11 16:30:52,822 - app.kernel32_inject - INFO - DLL injection simulated for process 16468
+2025-08-11 16:30:52,822 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:52] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:30:55,189 - app.kernel32_inject - INFO - Attempting to inject DLL into process 16468 with speed 2.0x
+2025-08-11 16:30:55,189 - app.kernel32_inject - INFO - DLL injection simulated for process 16468
+2025-08-11 16:30:55,189 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:30:55] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:31:51,111 - __main__ - INFO - Application starting...
+2025-08-11 16:31:54,125 - __main__ - INFO - Application starting...
+2025-08-11 16:31:54,126 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:31:54,161 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:31:54,161 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:31:57,525 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:31:57] "GET / HTTP/1.1" 200 -
+2025-08-11 16:31:57,576 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:31:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:31:59,433 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:31:59] "GET / HTTP/1.1" 200 -
+2025-08-11 16:31:59,441 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:31:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:31:59,477 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:31:59] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:32:10,869 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:32:10] "GET /process/16468 HTTP/1.1" 200 -
+2025-08-11 16:32:15,355 - app.kernel32_inject - INFO - DLL injected to process 16468
+2025-08-11 16:32:15,356 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:32:15] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:32:25,451 - app.kernel32_inject - ERROR - PowerShell injection failed: 
+2025-08-11 16:32:25,452 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:32:25] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:33:03,941 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:33:03] "GET /process/28372 HTTP/1.1" 200 -
+2025-08-11 16:33:18,901 - app.kernel32_inject - INFO - DLL injected to process 28372
+2025-08-11 16:33:18,902 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:33:18] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:33:33,379 - app.kernel32_inject - INFO - DLL injected to process 28372
+2025-08-11 16:34:45,943 - app.kernel32_inject - INFO - Hook removed for process 28372
+2025-08-11 16:34:49,547 - app.kernel32_inject - ERROR - PowerShell injection failed: 
+2025-08-11 16:35:10,654 - __main__ - INFO - Application starting...
+2025-08-11 16:35:12,965 - __main__ - INFO - Application starting...
+2025-08-11 16:35:12,966 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:35:12,996 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:35:12,997 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:35:16,393 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:35:16] "GET / HTTP/1.1" 200 -
+2025-08-11 16:35:16,439 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:35:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:35:17,153 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:35:17] "GET / HTTP/1.1" 200 -
+2025-08-11 16:35:17,159 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:35:17] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 16:35:17,235 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:35:17] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:35:22,460 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:35:22] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:35:25,582 - app.kernel32_inject - ERROR - WriteProcessMemory failed
+2025-08-11 16:35:25,583 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:35:25] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:36:17,656 - __main__ - INFO - Application starting...
+2025-08-11 16:36:19,779 - __main__ - INFO - Application starting...
+2025-08-11 16:36:19,779 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:36:19,806 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:36:19,807 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:36:23,182 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:23] "GET / HTTP/1.1" 200 -
+2025-08-11 16:36:23,196 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:36:28,429 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:28] "GET / HTTP/1.1" 200 -
+2025-08-11 16:36:28,467 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:36:28,496 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:28] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:36:28,673 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:28] "GET / HTTP/1.1" 200 -
+2025-08-11 16:36:28,680 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:36:28,720 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:28] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:36:28,977 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:28] "GET / HTTP/1.1" 200 -
+2025-08-11 16:36:28,983 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:36:29,014 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:29] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:36:29,190 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:29] "GET / HTTP/1.1" 200 -
+2025-08-11 16:36:29,197 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:36:29,227 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:29] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:36:34,335 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:34] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:36:35,136 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:35] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:36:37,055 - app.kernel32_inject - ERROR - WriteProcessMemory failed with error code: 998
+2025-08-11 16:36:37,056 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:37] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:36:48,782 - __main__ - INFO - Application starting...
+2025-08-11 16:36:51,606 - __main__ - INFO - Application starting...
+2025-08-11 16:36:51,606 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:36:51,636 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:36:51,636 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:36:55,058 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:55] "GET / HTTP/1.1" 200 -
+2025-08-11 16:36:55,098 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:36:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:37:02,564 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:37:02] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:37:05,341 - app.kernel32_inject - ERROR - WriteProcessMemory failed with error code: 998
+2025-08-11 16:37:05,342 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:37:05] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:39:23,692 - __main__ - INFO - Application starting...
+2025-08-11 16:39:25,805 - __main__ - INFO - Application starting...
+2025-08-11 16:39:25,805 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:39:25,835 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:39:25,835 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:39:29,192 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:29] "GET / HTTP/1.1" 200 -
+2025-08-11 16:39:29,207 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:39:32,848 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:32] "GET / HTTP/1.1" 200 -
+2025-08-11 16:39:32,888 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:39:32,918 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:32] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:39:33,046 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:33] "GET / HTTP/1.1" 200 -
+2025-08-11 16:39:33,052 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:39:33,084 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:33] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:39:36,876 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:36] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:39:38,709 - app.kernel32_inject - ERROR - WriteProcessMemory failed with error code: 998
+2025-08-11 16:39:38,710 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:39:38] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:40:29,989 - __main__ - INFO - Application starting...
+2025-08-11 16:40:32,235 - __main__ - INFO - Application starting...
+2025-08-11 16:40:32,235 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:40:32,263 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:40:32,263 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:40:37,811 - __main__ - INFO - Application starting...
+2025-08-11 16:40:40,064 - __main__ - INFO - Application starting...
+2025-08-11 16:40:40,065 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:40:40,095 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:40:40,095 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:40:43,459 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:40:43] "GET / HTTP/1.1" 200 -
+2025-08-11 16:40:43,498 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:40:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:40:50,739 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:40:50] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:40:53,077 - app.kernel32_inject - INFO - Successfully opened process 31032, handle: 996
+2025-08-11 16:40:53,077 - app.kernel32_inject - INFO - Allocated 63 bytes at address: -0x7e3b0000
+2025-08-11 16:40:53,078 - app.kernel32_inject - ERROR - WriteProcessMemory failed with error code: 998
+2025-08-11 16:40:53,078 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:40:53] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:41:45,145 - __main__ - INFO - Application starting...
+2025-08-11 16:41:48,230 - __main__ - INFO - Application starting...
+2025-08-11 16:41:48,230 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:41:48,259 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:41:48,259 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:41:51,639 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:41:51] "GET / HTTP/1.1" 200 -
+2025-08-11 16:41:51,651 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:41:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:41:52,248 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:41:52] "GET / HTTP/1.1" 200 -
+2025-08-11 16:41:52,254 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:41:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:41:52,293 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:41:52] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:42:00,402 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:42:00] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 16:42:05,908 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:42:05] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:42:07,703 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:42:07] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:42:12,189 - app.kernel32_inject - INFO - Successfully opened process 31032, handle: 736
+2025-08-11 16:42:12,189 - app.kernel32_inject - INFO - Allocated 63 bytes at address: -0x7e3a0000
+2025-08-11 16:42:12,190 - app.kernel32_inject - ERROR - WriteProcessMemory failed with error code: 998
+2025-08-11 16:42:12,190 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:42:12] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:43:01,376 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:01] "GET / HTTP/1.1" 200 -
+2025-08-11 16:43:01,383 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:43:01,414 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:01] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:43:06,227 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:06] "GET /process/16736 HTTP/1.1" 200 -
+2025-08-11 16:43:08,917 - app.kernel32_inject - INFO - Successfully opened process 16736, handle: 1296
+2025-08-11 16:43:08,917 - app.kernel32_inject - INFO - Allocated 63 bytes at address: -0x7b600000
+2025-08-11 16:43:08,920 - app.kernel32_inject - ERROR - WriteProcessMemory failed with error code: 998
+2025-08-11 16:43:08,921 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:08] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:43:13,905 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:13] "GET / HTTP/1.1" 200 -
+2025-08-11 16:43:13,946 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:43:13,976 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:13] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:43:19,159 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:19] "GET /process/16736 HTTP/1.1" 200 -
+2025-08-11 16:43:21,093 - app.kernel32_inject - INFO - Successfully opened process 16736, handle: 1272
+2025-08-11 16:43:21,093 - app.kernel32_inject - INFO - Allocated 63 bytes at address: 0x84a10000
+2025-08-11 16:43:21,094 - app.kernel32_inject - ERROR - WriteProcessMemory failed with error code: 87
+2025-08-11 16:43:21,094 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:43:21] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:45:37,752 - __main__ - INFO - Application starting...
+2025-08-11 16:45:39,882 - __main__ - INFO - Application starting...
+2025-08-11 16:45:39,882 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:45:39,913 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:45:39,913 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:45:43,294 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:45:43] "GET / HTTP/1.1" 200 -
+2025-08-11 16:45:43,334 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:45:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:45:56,886 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:45:56] "GET /process/16736 HTTP/1.1" 200 -
+2025-08-11 16:45:58,877 - app.kernel32_inject - ERROR - WriteProcessMemory failed with error code: 998
+2025-08-11 16:45:58,878 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:45:58] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 16:46:40,639 - __main__ - INFO - Application starting...
+2025-08-11 16:46:42,857 - __main__ - INFO - Application starting...
+2025-08-11 16:46:42,857 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:46:42,889 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:46:42,889 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:46:46,246 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:46:46] "GET / HTTP/1.1" 200 -
+2025-08-11 16:46:46,293 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:46:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:46:51,984 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:46:51] "GET / HTTP/1.1" 200 -
+2025-08-11 16:46:51,990 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:46:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:46:52,025 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:46:52] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:46:56,601 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:46:56] "GET /process/16736 HTTP/1.1" 200 -
+2025-08-11 16:46:58,261 - app.kernel32_inject - INFO - Attempting DLL injection into process 16736 with speed 2.0x
+2025-08-11 16:46:58,262 - app.kernel32_inject - INFO - DLL path: E:\ÎÄµµe°æ\learn\CtrlAssist\app\static\dll\libSpeedHook.dll
+2025-08-11 16:46:58,262 - app.kernel32_inject - INFO - DLL injection completed for process 16736
+2025-08-11 16:46:58,262 - app.kernel32_inject - WARNING - Note: Actual injection may be blocked by process protection. DLL functionality depends on target process compatibility.
+2025-08-11 16:46:58,262 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:46:58] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:47:16,632 - app.kernel32_inject - INFO - Attempting DLL injection into process 16736 with speed 0.3x
+2025-08-11 16:47:16,632 - app.kernel32_inject - INFO - DLL path: E:\ÎÄµµe°æ\learn\CtrlAssist\app\static\dll\libSpeedHook.dll
+2025-08-11 16:47:16,632 - app.kernel32_inject - INFO - DLL injection completed for process 16736
+2025-08-11 16:47:16,633 - app.kernel32_inject - WARNING - Note: Actual injection may be blocked by process protection. DLL functionality depends on target process compatibility.
+2025-08-11 16:47:16,635 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:47:16] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:47:24,934 - app.kernel32_inject - INFO - Attempting DLL injection into process 16736 with speed 5.0x
+2025-08-11 16:47:24,934 - app.kernel32_inject - INFO - DLL path: E:\ÎÄµµe°æ\learn\CtrlAssist\app\static\dll\libSpeedHook.dll
+2025-08-11 16:47:24,936 - app.kernel32_inject - INFO - DLL injection completed for process 16736
+2025-08-11 16:47:24,936 - app.kernel32_inject - WARNING - Note: Actual injection may be blocked by process protection. DLL functionality depends on target process compatibility.
+2025-08-11 16:47:24,938 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:47:24] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:47:33,694 - app.kernel32_inject - INFO - Attempting DLL injection into process 16736 with speed 0.4x
+2025-08-11 16:47:33,694 - app.kernel32_inject - INFO - DLL path: E:\ÎÄµµe°æ\learn\CtrlAssist\app\static\dll\libSpeedHook.dll
+2025-08-11 16:47:33,695 - app.kernel32_inject - INFO - DLL injection completed for process 16736
+2025-08-11 16:47:33,697 - app.kernel32_inject - WARNING - Note: Actual injection may be blocked by process protection. DLL functionality depends on target process compatibility.
+2025-08-11 16:47:33,698 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:47:33] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:48:56,307 - __main__ - INFO - Application starting...
+2025-08-11 16:49:02,519 - __main__ - INFO - Application starting...
+2025-08-11 16:49:04,959 - __main__ - INFO - Application starting...
+2025-08-11 16:49:04,959 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:49:05,040 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:49:05,041 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:49:08,394 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:49:08] "GET / HTTP/1.1" 200 -
+2025-08-11 16:49:08,455 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:49:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:49:12,716 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:49:12] "GET /process/16736 HTTP/1.1" 200 -
+2025-08-11 16:49:15,287 - app.kernel32_inject - INFO - TAS speed control started for process 16736 at 1.5x
+2025-08-11 16:49:15,288 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:49:15] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:50:23,067 - __main__ - INFO - Application starting...
+2025-08-11 16:50:25,257 - __main__ - INFO - Application starting...
+2025-08-11 16:50:25,258 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:50:25,287 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:50:25,287 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:50:28,706 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:50:28] "GET / HTTP/1.1" 200 -
+2025-08-11 16:50:28,761 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:50:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:50:40,649 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:50:40] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:50:41,011 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:50:41] "GET /process/31032 HTTP/1.1" 200 -
+2025-08-11 16:50:46,137 - app.kernel32_inject - INFO - DLL injected to process 31032
+2025-08-11 16:50:46,138 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:50:46] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 16:50:53,525 - app.kernel32_inject - INFO - Hook removed for process 31032
+2025-08-11 16:50:53,526 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:50:53] "POST /reset_speed HTTP/1.1" 200 -
+2025-08-11 16:52:14,534 - __main__ - INFO - Application starting...
+2025-08-11 16:52:16,617 - __main__ - INFO - Application starting...
+2025-08-11 16:52:16,618 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:52:16,645 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:52:16,645 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:52:20,025 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:20] "GET / HTTP/1.1" 200 -
+2025-08-11 16:52:20,073 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:52:23,007 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:23] "GET / HTTP/1.1" 200 -
+2025-08-11 16:52:23,014 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:52:23,049 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:23] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:52:26,950 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:26] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:52:28,958 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:28] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:52:29,133 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:29] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:52:46,709 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:46] "GET /get_network_stats HTTP/1.1" 200 -
+2025-08-11 16:52:51,430 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:51] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:52:53,438 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:53] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:52:55,436 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:55] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:52:55,823 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:52:55] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:55:47,776 - __main__ - INFO - Application starting...
+2025-08-11 16:55:50,097 - __main__ - INFO - Application starting...
+2025-08-11 16:55:50,097 - __main__ - INFO - Starting application initialization...
+2025-08-11 16:55:50,127 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 16:55:50,127 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 16:55:53,487 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:55:53] "GET / HTTP/1.1" 200 -
+2025-08-11 16:55:53,501 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:55:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:56:01,878 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:01] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:56:03,885 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:03] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:05,888 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:05] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:07,894 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:07] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:09,895 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:09] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:11,885 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:11] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:13,884 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:13] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:15,893 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:15] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:17,887 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:17] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:18,484 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:18] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 16:56:18,751 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:18] "[35m[1mGET /process/0 HTTP/1.1[0m" 500 -
+2025-08-11 16:56:20,498 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:20] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:21,889 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:21] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:23,885 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:23] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:24,186 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:24] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 16:56:25,885 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:25] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:27,809 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:27] "GET /process/23180 HTTP/1.1" 200 -
+2025-08-11 16:56:27,891 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:27] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:29,883 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:29] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:30,255 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:30] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:56:30,709 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:30] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:56:32,714 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:32] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:34,725 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:34] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:36,715 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:36] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:38,722 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:38] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:40,720 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:40] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:42,723 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:42] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:44,718 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:44] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:46,729 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:46] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:48,662 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:48] "GET /get_network_stats HTTP/1.1" 200 -
+2025-08-11 16:56:49,867 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:49] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:50,717 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:50] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 16:56:50,893 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:50] "[31m[1mPOST /start_packet_capture HTTP/1.1[0m" 400 -
+2025-08-11 16:56:51,623 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:51] "[31m[1mPOST /start_packet_capture HTTP/1.1[0m" 400 -
+2025-08-11 16:56:52,190 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:56:52] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 16:57:02,774 - app.routes - INFO - Found 0 results for spikego (string)
+2025-08-11 16:57:02,775 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:57:02] "POST /scan_memory HTTP/1.1" 200 -
+2025-08-11 16:57:03,991 - app.routes - INFO - Found 0 results for spikego (string)
+2025-08-11 16:57:03,992 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:57:03] "POST /scan_memory HTTP/1.1" 200 -
+2025-08-11 16:57:18,318 - app.routes - INFO - Found 0 results for PCL (string)
+2025-08-11 16:57:18,319 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:57:18] "POST /scan_memory HTTP/1.1" 200 -
+2025-08-11 16:58:01,715 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:01] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 16:58:05,001 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:05] "GET /process/30332 HTTP/1.1" 200 -
+2025-08-11 16:58:15,406 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:15] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 16:58:19,435 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:19,439 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:19] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:24,240 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:24,241 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:24] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:40,783 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:40,785 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:40] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:45,615 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:45,616 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:45] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:46,086 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:46,087 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:46] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:47,190 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:47,192 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:47] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:47,390 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:47,392 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:47] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:48,199 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:48] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 16:58:49,030 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:49,031 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:49] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:54,375 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:54,375 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:54] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:54,854 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:54,855 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:54] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:55,455 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:55,455 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:55] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:58,807 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:58,808 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:58] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:59,542 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:59,543 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:59] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:58:59,718 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:58:59,718 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:58:59] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:01,366 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:01,367 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:01] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:01,574 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:01,576 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:01] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:01,761 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:01,761 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:01] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:01,934 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:01,935 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:01] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:02,374 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:02,376 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:02] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:02,630 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:02,631 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:02] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:02,817 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:02,817 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:02] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:02,990 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:02,990 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:02] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:03,174 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:03,175 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:03] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:03,342 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:03,343 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:03] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:03,510 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:03,511 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:03] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:10,398 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:10,398 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:10] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:18,303 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:18,304 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:18] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:18,742 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:18,743 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:18] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:18,943 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:18,944 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:18] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 16:59:38,826 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:38] "GET / HTTP/1.1" 200 -
+2025-08-11 16:59:38,883 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 16:59:38,924 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:38] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 16:59:42,868 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:42] "GET /process/30332 HTTP/1.1" 200 -
+2025-08-11 16:59:51,991 - app.routes - INFO - Found 0 results for 1 (int32)
+2025-08-11 16:59:51,992 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:51] "POST /scan_memory HTTP/1.1" 200 -
+2025-08-11 16:59:52,983 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:52] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 16:59:54,271 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 16:59:54,272 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 16:59:54] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 17:00:07,438 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:07] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 17:00:09,445 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:09] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:11,449 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:11] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:13,457 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:13] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:15,862 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:15] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:17,455 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:17] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:19,449 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:19] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:21,445 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:21] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:23,450 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:23] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:25,446 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:25] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:27,447 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:27] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:27,554 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:27] "POST /set_network_filter HTTP/1.1" 200 -
+2025-08-11 17:00:28,263 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:28] "[31m[1mPOST /start_packet_capture HTTP/1.1[0m" 400 -
+2025-08-11 17:00:28,856 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:28] "[31m[1mPOST /start_packet_capture HTTP/1.1[0m" 400 -
+2025-08-11 17:00:29,450 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:29] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:30,158 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:30] "[31m[1mPOST /start_packet_capture HTTP/1.1[0m" 400 -
+2025-08-11 17:00:31,446 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:31] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:32,237 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:32] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 17:00:33,456 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:33] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:35,458 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:35] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:37,446 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:37] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:39,451 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:39] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:41,459 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:41] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:43,294 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 17:00:43,295 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:43] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 17:00:43,445 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:43] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:45,455 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:45] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:48,258 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:48] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:50,255 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:50] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:52,254 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:52] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:54,248 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:54] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:56,255 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:56] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:00:58,258 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:00:58] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:00,246 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:00] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:02,250 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:02] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:04,250 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:04] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:06,249 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:06] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:08,260 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:08] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:10,259 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:10] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:12,261 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:12] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:14,260 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:14] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:16,253 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:16] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:18,256 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:18] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:20,259 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:20] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:22,251 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:22] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:24,255 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:24] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:26,259 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:26] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:28,259 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:28] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:30,257 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:30] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:32,251 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:32] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:34,255 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:34] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:36,252 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:36] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:38,250 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:38] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:40,254 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:40] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:42,255 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:42] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:44,257 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:44] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:01:46,259 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:01:46] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:02:22,253 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:02:22] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:03:22,252 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:03:22] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:03:28,715 - __main__ - INFO - Application starting...
+2025-08-11 17:03:31,001 - __main__ - INFO - Application starting...
+2025-08-11 17:03:31,002 - __main__ - INFO - Starting application initialization...
+2025-08-11 17:03:31,049 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 17:03:31,050 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 17:03:34,407 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:03:34] "GET / HTTP/1.1" 200 -
+2025-08-11 17:03:34,431 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:03:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 17:04:52,733 - __main__ - INFO - Application starting...
+2025-08-11 17:04:55,103 - __main__ - INFO - Application starting...
+2025-08-11 17:04:55,104 - __main__ - INFO - Starting application initialization...
+2025-08-11 17:04:55,140 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 17:04:55,140 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 17:04:57,645 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:04:57] "GET / HTTP/1.1" 200 -
+2025-08-11 17:04:57,708 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:04:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 17:04:57,819 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:04:57] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 17:04:58,498 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:04:58] "GET / HTTP/1.1" 200 -
+2025-08-11 17:04:58,512 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:04:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 17:05:05,984 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:05] "GET /process/30332 HTTP/1.1" 200 -
+2025-08-11 17:05:10,687 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:10] "POST /hook_process HTTP/1.1" 200 -
+2025-08-11 17:05:10,697 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:10] "GET /get_hooked_process_info HTTP/1.1" 200 -
+2025-08-11 17:05:22,256 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:22] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:05:30,059 - app.routes - INFO - Found 0 results for 1 (int32)
+2025-08-11 17:05:30,060 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:30] "POST /scan_memory HTTP/1.1" 200 -
+2025-08-11 17:05:33,271 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:33] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 17:05:35,952 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 17:05:35,952 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:35] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 17:05:38,551 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 17:05:38,551 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:38] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 17:05:41,302 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 17:05:41,303 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:05:41] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 17:06:18,102 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:18] "POST /unhook_process HTTP/1.1" 200 -
+2025-08-11 17:06:19,742 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:19] "POST /hook_process HTTP/1.1" 200 -
+2025-08-11 17:06:19,749 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:19] "GET /get_hooked_process_info HTTP/1.1" 200 -
+2025-08-11 17:06:20,417 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:20] "POST /unhook_process HTTP/1.1" 200 -
+2025-08-11 17:06:22,030 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:22] "POST /reset_speed HTTP/1.1" 200 -
+2025-08-11 17:06:22,255 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:22] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:06:30,687 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:30] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 17:06:34,828 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:34] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 17:06:40,503 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:40] "POST /start_overlay HTTP/1.1" 200 -
+2025-08-11 17:06:53,806 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:06:53] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 17:07:22,250 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:07:22] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:07:41,852 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:07:41] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 17:07:58,585 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:07:58] "GET / HTTP/1.1" 200 -
+2025-08-11 17:07:58,593 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:07:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 17:07:58,635 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:07:58] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 17:08:01,005 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:01] "GET /process/16672 HTTP/1.1" 200 -
+2025-08-11 17:08:05,398 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:05] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 17:08:12,466 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:12] "POST /hook_process HTTP/1.1" 200 -
+2025-08-11 17:08:12,484 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:12] "GET /get_hooked_process_info HTTP/1.1" 200 -
+2025-08-11 17:08:20,134 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:20] "POST /unhook_process HTTP/1.1" 200 -
+2025-08-11 17:08:22,260 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:22] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 17:08:23,500 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:23] "GET /process/17384 HTTP/1.1" 200 -
+2025-08-11 17:08:23,876 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:23] "GET /process/17384 HTTP/1.1" 200 -
+2025-08-11 17:08:47,345 - app.kernel32_inject - INFO - DLL injected to process 17384
+2025-08-11 17:08:47,345 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:47] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 17:08:49,095 - app.kernel32_inject - INFO - DLL injected to process 17384
+2025-08-11 17:08:49,095 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:08:49] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 17:09:22,259 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 17:09:22] "GET /get_packets HTTP/1.1" 200 -

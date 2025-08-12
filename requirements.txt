@@ -1,6 +1,5 @@
-Flask==2.0.3
-psutil==5.8.0
-ctypes
-struct
-subprocess
-werkzeug
+Flask==2.3.3
+psutil==5.9.6
+Werkzeug==2.3.7
+PyQt6==6.6.0
+PyInstaller==6.2.0

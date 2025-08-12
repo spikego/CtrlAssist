@@ -11,30 +11,34 @@ body {
 
 h1 {
     text-align: center;
+    color: #333;
+    margin: 20px 0;
 }
 
 .dashboard {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .window {
-    width: 30%;
-    height: 300px;
+    width: 48%;
+    height: 350px;
     overflow-y: auto;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    transition: transform 0.3s ease-in-out;
-    margin-top: 20px;
+    transition: transform 0.2s ease-in-out;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
 .window:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 button {
@@ -57,14 +61,16 @@ button:hover {
 label {
     display: block;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 input[type="text"], select {
     width: 100%;
-    padding: 5px;
+    padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 input[type="range"] {
@@ -72,18 +78,132 @@ input[type="range"] {
     margin-top: 10px;
 }
 
+#scan-results li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+#scan-results li:hover {
+    background-color: #e3f2fd;
+}
+
+#scan-status {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.result-display {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 14px;
+    border-left: 4px solid #007bff;
+}
+
 .status-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 }
 
 .status-bar div {
     margin: 0 10px;
+    font-size: 12px;
+}
+
+#process-list li {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#process-list li:hover {
+    background-color: #f0f8ff;
+}
+
+#process-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+#update-status {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.network-controls {
+    margin-bottom: 10px;
+}
+
+.network-controls button {
+    width: auto;
+    display: inline-block;
+    margin: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.network-filters {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.network-filters select,
+.network-filters input {
+    margin: 0;
+    padding: 3px;
+    font-size: 11px;
+}
+
+#packet-results div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#packet-results div:hover {
+    background-color: #e3f2fd;
+}
+
+.scan-buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.scan-buttons button {
+    flex: 1;
+    margin: 0;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.scan-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#detected-type {
+    margin-top: 5px;
+    font-style: italic;
 }

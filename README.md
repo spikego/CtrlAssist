@@ -1,96 +1,66 @@
-# Game Control Dashboard
+# CtrlAssist Memory Engine
 
 ## Overview
 
-This project is a game control dashboard that allows users to manage game processes, scan and modify memory, control game speed, and execute Python and Kotlin scripts. It also supports uploading script files for execution.
+CtrlAssist is a powerful memory manipulation and analysis tool designed for application debugging, reverse engineering, and memory research. It provides comprehensive memory scanning, editing, and process control capabilities through a modern web-based interface.
 
-## Features
+## Core Features
 
-- **Process Management**: View and select running processes.
-- **Memory Scanning**: Scan memory for specific values.
-- **Memory Modification**: Modify memory values at specific addresses.
-- **Game Speed Control**: Adjust the speed of games.
-- **Script Execution**: Execute Python and Kotlin scripts.
-- **Script File Upload**: Upload and execute script files.
+- **Process Attachment**: Attach to any running process with full memory access
+- **Memory Scanner**: Scan for specific values (Int32, Int64, Float, Double, String)
+- **Memory Editor**: Modify memory values at specific addresses
+- **Offset Calculator**: Calculate memory offsets between addresses
+- **Module Base Finder**: Get base addresses of loaded modules
+- **Pointer Chain Resolver**: Resolve complex pointer chains
+- **Game Speed Control**: Modify application speed using kernel32.dll
+- **JVM Detection**: Identify and analyze Java Virtual Machine processes
+- **JNI Interface**: Java Native Interface integration for Java applications
+- **Visual Overlay**: Pygame-based rendering system for drawing overlays on target windows
+- **Single EXE Build**: Portable executable with no dependencies
 
 ## Prerequisites
 
-- Python 3.x
-- Flask
-- psutil
-- ctypes
-- struct
-- subprocess
-- werkzeug
+- Windows 10/11 (Administrator privileges required)
+- Python 3.8+ (for development)
 
-## Installation
+## Quick Start (Pre-built)
+
+1. Download the latest `CtrlAssist.exe` from releases
+2. Run as Administrator (required for memory access)
+3. Browser will open automatically to the control interface
+
+## Development Setup
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/spikego/game-control-dashboard.git
-    cd game-control-dashboard
+    git clone <repository-url>
+    cd CtrlAssist
     ```
 
-2. Create and activate a virtual environment:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. Install the required packages:
+2. Install dependencies:
     ```sh
     pip install -r requirements.txt
     ```
 
-## Building the Executable
-
-1. Install PyInstaller:
+3. Run in development mode:
     ```sh
-    pip install pyinstaller
+    python main.py
     ```
 
-2. Create a `pyinstaller.spec` file with the following content:
-    ```python
-    # -*- mode: python ; coding: utf-8 -*-
+## Building the Executable
 
-    block_cipher = None
+### Manual Build
 
-    a = Analysis(
-        ['main.py'],
-        pathex=['.'],
-        binaries=[],
-        datas=[('app/templates', 'app/templates'), ('app/static', 'app/static')],
-        hiddenimports=[],
-        hookspath=[],
-        runtime_hooks=[],
-        excludes=[],
-        noarchive=False,
-        optimize=0,
-    )
-    pyz = PYZ(a.pure)
+1. Install dependencies:
+    ```sh
+    pip install Flask==2.3.3 psutil==5.9.6 Werkzeug==2.3.7 PyQt6==6.6.0 PyInstaller==6.2.0 Pillow pygame
+    ```
 
-    exe = EXE(
-        pyz,
-        a.scripts,
-        [],
-        exclude_binaries=True,
-        name='game_control_dashboard',
-        debug=False,
-        bootloader_ignore_signals=False,
-        strip=False,
-        upx=True,
-        console=True,
-    )
-    coll = COLLECT(
-        exe,
-        a.binaries,
-        a.zipfiles,
-        a.datas,
-        strip=False,
-        upx=True,
-        upx_exclude=[],
-        name='game_control_dashboard',
-    )
+2. Clean previous builds (optional):
+    ```sh
+    taskkill /f /im CtrlAssist.exe
+    rmdir /s /q build
+    rmdir /s /q dist
     ```
 
 3. Build the executable:
@@ -98,55 +68,115 @@ This project is a game control dashboard that allows users to manage game proces
     pyinstaller CtrlAssist.spec
     ```
 
-4. Find the executable in the `dist/game_control_dashboard` directory.
+4. Find `CtrlAssist.exe` in the `dist` folder
 
-## Usage
+## Usage Guide
 
-1. Run the application:
-    ```sh
-    python main.py
-    ```
+### 1. Process Management
+- View all running processes in the left panel
+- Use the search box to filter processes by name
+- Click on any process to select it
+- Process information will be displayed in the status bar
 
-2. Open your web browser and navigate to `http://127.0.0.1:5000`.
+### 2. Memory Operations
 
-## Detailed Tutorial
+#### Attach to Process
+1. Select a process from the list
+2. Click "Attach to Selected Process"
+3. Wait for confirmation message
 
-### Process Management
+#### Memory Scanning
+1. Choose value type (Int32, Int64, Float, Double, String)
+2. Enter the value to search for
+3. Click "Scan Memory"
+4. Results will show up to 100 matches
+5. Click any result to auto-fill the memory editor
 
-1. **View Processes**: The dashboard displays a list of running processes. Click on a process to view its details.
-2. **Refresh Processes**: Click the "Refresh Processes" button to update the list of running processes.
+#### Memory Editing
+1. Enter memory address (hex format)
+2. Enter new value
+3. Select value type
+4. Click "Write Memory"
 
-### Memory Scanning
+### 3. Advanced Features
 
-1. **Select Scan Type**: Choose "Exact Value" or "Value Range".
-2. **Select Value Type**: Choose the type of value to scan for (integer, float, or string).
-3. **Enter Value**: Enter the value to scan for.
-4. **Scan Memory**: Click the "Scan" button to start scanning memory. Results will be displayed in a list.
+#### Offset Calculator
+1. Enter module name to get base address
+2. Enter base and target addresses
+3. Calculate the offset between them
 
-### Memory Modification
+#### Pointer Chain Resolver
+1. Enter base address
+2. Enter comma-separated offsets (hex)
+3. Resolve the final memory address
 
-1. **Enter Memory Address**: Enter the memory address to modify.
-2. **Enter New Value**: Enter the new value to write to the memory address.
-3. **Modify Memory**: Click the "Modify Memory" button to apply the changes.
+#### Game Speed Control (TAS)
+1. Select a process
+2. Adjust speed multiplier (0.1x to 5.0x)
+3. Apply speed changes using TAS technology
+4. Use "Unload DLL" to stop speed control
 
-### Game Speed Control
+#### Network Analyzer
+1. **Start Capture**: Begin monitoring network traffic
+2. **Protocol Filter**: Filter by TCP, UDP, ICMP, or All
+3. **Port Filter**: Monitor specific ports (e.g., 80, 443)
+4. **IP Filter**: Monitor traffic to/from specific IP addresses
+5. **Statistics**: View packet counts and data transfer stats
+6. **Clear**: Remove captured packets from display
+7. **Stop**: End packet capture session
 
-1. **Enter Game ID**: Enter the ID of the game to control.
-2. **Adjust Speed**: Use the range slider to set the desired game speed.
-3. **Change Speed**: Click the "Change Speed" button to apply the new speed.
+**Network Features:**
+- Real-time packet monitoring
+- Protocol analysis (TCP/UDP/ICMP)
+- Source/destination tracking
+- Packet size and timing information
+- Click packets for detailed information
+- Export capabilities for analysis
 
-### Script System Tutorial
+## Quick Start Tutorial
 
-#### Script Execution
+### For Beginners
+1. **Run as Administrator**: Right-click CtrlAssist.exe and select "Run as administrator"
+2. **Select Target Process**: Use the search box to find your game/application, then click on it
+3. **Attach to Process**: Click "Attach to Selected Process" button
+4. **Find Values**: Enter a known value (like health, money) and click "Scan Memory"
+5. **Modify Values**: Click on a scan result, modify the value, and click "Write Memory"
+6. **Verify Changes**: Check if the value changed in your game/application
 
-1. **Select Script Type**: Choose the type of script to execute (Python or Kotlin).
-2. **Enter Script Content**: Input the script content in the text area.
-3. **Execute Script**: Click the "Execute Script" button to run the script. The result will be displayed below.
+### Common Use Cases
+- **Game Analysis**: Find memory addresses for game variables
+- **Speed Control**: Use TAS technology for frame-perfect gameplay
+- **Network Monitoring**: Analyze game network traffic and protocols
+- **Debugging**: Analyze application memory and network behavior
+- **Research**: Study application behavior and data flow
 
-#### Script File Upload
+### Network Analysis Tutorial
+1. **Start Monitoring**: Click "Start Capture" in Network Analyzer
+2. **Set Filters**: Choose protocol (TCP/UDP) and specific ports if needed
+3. **Monitor Traffic**: Watch real-time packet flow
+4. **Analyze Packets**: Click on packets to see detailed information
+5. **Export Data**: Use statistics to understand traffic patterns
 
-1. **Select Script File**: Click the "Choose File" button to select a script file (.py, .kt).
-2. **Upload Script**: Click the "Upload Script" button to upload and execute the script file. The result will be displayed below.
+## Technical Details
+
+### Memory Engine
+- Uses Windows API (kernel32.dll) for memory operations
+- Supports multiple data types with proper struct packing
+- Implements memory protection and error handling
+- Efficient memory scanning with region filtering
+
+### Speed Control (TAS)
+- Uses Tool-Assisted Speedrun (TAS) technology
+- Process suspension/resumption for precise timing
+- Frame-perfect speed control
+- Safe operation with automatic cleanup
+
+### Network Engine
+- Real-time packet capture and analysis
+- Protocol filtering (TCP/UDP/ICMP)
+- Port and IP address filtering
+- Traffic statistics and monitoring
+- Packet inspection and export capabilities
 
 ## License
 

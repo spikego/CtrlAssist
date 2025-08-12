@@ -39,6 +39,7 @@
         <div class="dashboard">
             <div class="window" id="process-window">
                 <h2>Processes</h2>
+                <input type="text" id="process-search" placeholder="Search processes..." onkeyup="filterProcesses()">
                 <ul id="process-list">
                     {% for process in processes %}
                         <li><a href="#" onclick="loadProcess({{ process['pid'] }})">{{ process['name'] }} (PID: {{ process['pid'] }})</a></li>
@@ -47,47 +48,121 @@
                 <button onclick="refreshProcesses()">Refresh Processes</button>
             </div>
             <div class="window" id="scan-window">
-                <h2>Scan Memory</h2>
-                <label for="scan-type">Scan Type:</label>
-                <select id="scan-type">
-                    <option value="exact">Exact Value</option>
-                    <option value="range">Value Range</option>
-                </select>
+                <h2>Memory Scanner</h2>
+                <button onclick="attachProcess()">Attach to Selected Process</button>
+                <br><br>
                 <label for="value-type">Value Type:</label>
-                <select id="value-type">
-                    <option value="int">Integer</option>
+                <select id="value-type" onchange="handleValueTypeChange()">
+                    <option value="auto">Auto Detect</option>
+                    <option value="int32">Int32</option>
+                    <option value="int64">Int64</option>
                     <option value="float">Float</option>
+                    <option value="double">Double</option>
                     <option value="string">String</option>
                 </select>
-                <input type="text" id="scan-value" placeholder="Value to scan">
-                <button onclick="scanMemory()">Scan</button>
+                <input type="text" id="scan-value" placeholder="Value to scan" oninput="autoDetectType()">
+                <div class="scan-buttons">
+                    <button onclick="scanMemory()">First Scan</button>
+                    <button onclick="rescanMemory()" id="rescan-btn" disabled>Next Scan</button>
+                    <button onclick="resetScan()">Reset</button>
+                </div>
+                <div id="scan-status"></div>
                 <ul id="scan-results"></ul>
             </div>
             <div class="window" id="modify-window">
-                <h2>Modify Memory</h2>
-                <input type="text" id="memory-address" placeholder="Memory Address">
+                <h2>Memory Editor</h2>
+                <input type="text" id="memory-address" placeholder="Memory Address (hex)">
                 <input type="text" id="memory-value" placeholder="New Value">
-                <button onclick="modifyMemory()">Modify Memory</button>
+                <select id="modify-type">
+                    <option value="int32">Int32</option>
+                    <option value="int64">Int64</option>
+                    <option value="float">Float</option>
+                    <option value="double">Double</option>
+                    <option value="string">String</option>
+                </select>
+                <button onclick="modifyMemory()">Write Memory</button>
             </div>
             <div class="window" id="control-window">
-    <h2>Game Control</h2>
-    <label for="game-id">Game ID:</label>
-    <input type="text" id="game-id" placeholder="Enter Game ID" size="30">
-    <label for="game-speed">Game Speed:</label>
-    <input type="range" id="game-speed" min="0.1" max="3" step="0.1" value="1" oninput="updateSpeedValue(this.value)">
-    <span id="speed-value">1</span>
-    <button onclick="changeGameSpeed()">Change Speed</button>
-    <label for="function-content">Function Content:</label>
-    <textarea id="function-content" rows="15" cols="80" placeholder="Enter function content"></textarea>
-    <button onclick="updateFunctionContent()">Update Function</button>
-</div>
-
-            <div class="window" id="script-upload-window">
-    <h2>Upload Script</h2>
-    <input type="file" id="script-file" accept=".lua,.py,.kt">
-    <button onclick="uploadScriptFile()">Upload Script</button>
-    <pre id="upload-result"></pre>
-</div>
+                <h2>Game Speed Control</h2>
+                <label for="game-speed">Speed Multiplier:</label>
+                <input type="range" id="game-speed" min="0.1" max="5" step="0.1" value="1" oninput="updateSpeedValue(this.value)">
+                <span id="speed-value">1.0x</span>
+                <button onclick="changeGameSpeed()">Apply Speed</button>
+                <button onclick="resetSpeed()">Unload DLL</button>
+            </div>
+            <div class="window" id="offset-window">
+                <h2>Offset Calculator</h2>
+                <input type="text" id="module-name" placeholder="Module name (e.g., game.exe)">
+                <button onclick="getModuleBase()">Get Base Address</button>
+                <div id="base-address"></div>
+                <br>
+                <input type="text" id="base-addr" placeholder="Base Address (hex)">
+                <input type="text" id="target-addr" placeholder="Target Address (hex)">
+                <button onclick="calculateOffset()">Calculate Offset</button>
+                <div id="offset-result"></div>
+            </div>
+            <div class="window" id="pointer-window">
+                <h2>Pointer Scanner</h2>
+                <input type="text" id="pointer-base" placeholder="Base Address (hex)">
+                <input type="text" id="pointer-offsets" placeholder="Offsets (comma separated, hex)">
+                <button onclick="resolvePointer()">Resolve Pointer Chain</button>
+                <div id="pointer-result"></div>
+            </div>
+            <div class="window" id="jvm-window">
+                <h2>JVM Detection</h2>
+                <button onclick="detectJVM()">Detect JVM Processes</button>
+                <button onclick="refreshJVM()">Refresh JVM</button>
+                <div id="jvm-results"></div>
+            </div>
+            <div class="window" id="network-window">
+                <h2>Network Analyzer</h2>
+                <div class="network-controls">
+                    <button onclick="hookProcess()">Hook Process</button>
+                    <button onclick="unhookProcess()">Unhook</button>
+                    <button onclick="startPacketCapture()">Start Capture</button>
+                    <button onclick="stopPacketCapture()">Stop</button>
+                    <button onclick="clearPackets()">Clear</button>
+                    <button onclick="getNetworkStats()">Statistics</button>
+                </div>
+                <div class="network-filters">
+                    <select id="protocol-filter" onchange="setNetworkFilter('protocol', this.value)">
+                        <option value="all">All Protocols</option>
+                        <option value="tcp">TCP</option>
+                        <option value="udp">UDP</option>
+                        <option value="icmp">ICMP</option>
+                    </select>
+                    <input type="text" id="port-filter" placeholder="Port" onchange="setNetworkFilter('port', this.value)" style="width:60px">
+                    <input type="text" id="ip-filter" placeholder="IP Address" onchange="setNetworkFilter('ip', this.value)" style="width:100px">
+                </div>
+                <div id="hooked-process-info" style="font-size:11px; margin:5px 0; color:#0066cc;"></div>
+                <div id="network-stats" style="font-size:11px; margin:5px 0;"></div>
+                <div id="packet-results" style="max-height:250px; overflow-y:auto; font-family:monospace; font-size:10px;"></div>
+            </div>
+            <div class="window" id="overlay-window">
+                <h2>Visual Overlay</h2>
+                <button onclick="startOverlay()">Start Overlay</button>
+                <button onclick="stopOverlay()">Stop Overlay</button>
+                <br><br>
+                <input type="number" id="box-x" placeholder="X" style="width:60px">
+                <input type="number" id="box-y" placeholder="Y" style="width:60px">
+                <input type="number" id="box-width" placeholder="Width" style="width:60px">
+                <input type="number" id="box-height" placeholder="Height" style="width:60px">
+                <select id="box-color">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="white">White</option>
+                </select>
+                <button onclick="drawBox()">Draw Box</button>
+                <button onclick="clearOverlay()">Clear All</button>
+            </div>
+            <div class="window" id="control-panel">
+                <h2>Control Panel</h2>
+                <button onclick="checkForUpdates()">Check for Updates</button>
+                <div id="update-status"></div>
+                <button onclick="exitApplication()" style="background-color: #dc3545;">Exit Application</button>
+            </div>
         </div>
         <div class="status-bar">
             <div id="date-time"></div>
@@ -103,146 +178,707 @@
         </div>
     </div>
 
-
     <script>
+        let selectedPid = null;
+        
         function loadProcess(pid) {
+            selectedPid = pid;
             fetch(`/process/${pid}`)
                 .then(response => response.json())
                 .then(data => {
+                    if (data.error) {
+                        alert('Error loading process: ' + data.error);
+                        return;
+                    }
                     document.getElementById('selected-process').textContent = `Selected Process: ${data.name} (PID: ${data.pid})`;
                     document.getElementById('cpu-status').textContent = `CPU: ${data.cpu_usage}%`;
                     document.getElementById('gpu-status').textContent = `GPU: ${data.gpu_usage}%`;
                     document.getElementById('memory-status').textContent = `Memory: ${data.memory_usage}%`;
                     document.getElementById('disk-status').textContent = `Disk: ${data.disk_usage}%`;
+                })
+                .catch(error => {
+                    console.error('Error loading process:', error);
+                    alert('Failed to load process information');
                 });
         }
-
-        function scanMemory() {
-            const scanType = document.getElementById('scan-type').value;
-            const valueType = document.getElementById('value-type').value;
-            const scanValue = document.getElementById('scan-value').value;
-
-            fetch('/scan_memory', {
+        
+        function attachProcess() {
+            if (!selectedPid) {
+                alert('Please select a process first');
+                return;
+            }
+            
+            fetch('/attach_process', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ scanType, valueType, scanValue })
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ pid: selectedPid })
             })
             .then(response => response.json())
             .then(data => {
-                const scanResults = document.getElementById('scan-results');
-                scanResults.innerHTML = '';
+                if (data.status === 'success') {
+                    document.getElementById('scan-status').textContent = 'Attached to process';
+                } else {
+                    alert('Failed to attach to process');
+                }
+            });
+        }
+
+        let scanResults = [];
+        let scanHistory = [];
+        
+        function autoDetectType() {
+            const valueTypeSelect = document.getElementById('value-type');
+            if (valueTypeSelect.value !== 'auto') return;
+            
+            const value = document.getElementById('scan-value').value;
+            if (!value) return;
+            
+            // Auto detect value type
+            if (/^-?\d+$/.test(value)) {
+                const num = parseInt(value);
+                if (num >= -2147483648 && num <= 2147483647) {
+                    document.getElementById('detected-type').textContent = 'Detected: Int32';
+                } else {
+                    document.getElementById('detected-type').textContent = 'Detected: Int64';
+                }
+            } else if (/^-?\d*\.\d+$/.test(value)) {
+                document.getElementById('detected-type').textContent = 'Detected: Float/Double';
+            } else {
+                document.getElementById('detected-type').textContent = 'Detected: String';
+            }
+        }
+        
+        function handleValueTypeChange() {
+            const detectedDiv = document.getElementById('detected-type');
+            if (document.getElementById('value-type').value === 'auto') {
+                if (!detectedDiv) {
+                    const div = document.createElement('div');
+                    div.id = 'detected-type';
+                    div.style.fontSize = '12px';
+                    div.style.color = '#666';
+                    document.getElementById('value-type').parentNode.appendChild(div);
+                }
+                autoDetectType();
+            } else if (detectedDiv) {
+                detectedDiv.remove();
+            }
+        }
+        
+        function getActualValueType(value) {
+            const selectedType = document.getElementById('value-type').value;
+            if (selectedType !== 'auto') return selectedType;
+            
+            // Auto detection logic
+            if (/^-?\d+$/.test(value)) {
+                const num = parseInt(value);
+                return (num >= -2147483648 && num <= 2147483647) ? 'int32' : 'int64';
+            } else if (/^-?\d*\.\d+$/.test(value)) {
+                return 'float';
+            } else {
+                return 'string';
+            }
+        }
+        
+        function scanMemory() {
+            const scanValue = document.getElementById('scan-value').value;
+            
+            if (!scanValue) {
+                alert('Please enter a value to scan');
+                return;
+            }
+            
+            const valueType = getActualValueType(scanValue);
+            document.getElementById('scan-status').textContent = `Scanning for ${valueType}...`;
+            
+            fetch('/scan_memory', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ valueType, scanValue })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById('scan-status').textContent = `Error: ${data.error}`;
+                    return;
+                }
+                
+                scanResults = data.results || [];
+                scanHistory = [{ value: scanValue, type: valueType, results: scanResults }];
+                displayScanResults(data);
+                
+                // Enable rescan button
+                document.getElementById('rescan-btn').disabled = scanResults.length === 0;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('scan-status').textContent = 'Scan failed';
+            });
+        }
+        
+        function rescanMemory() {
+            const newValue = document.getElementById('scan-value').value;
+            
+            if (!newValue) {
+                alert('Please enter a new value to scan');
+                return;
+            }
+            
+            if (scanResults.length === 0) {
+                alert('No previous scan results to filter');
+                return;
+            }
+            
+            const valueType = getActualValueType(newValue);
+            document.getElementById('scan-status').textContent = `Rescanning ${scanResults.length} addresses...`;
+            
+            // Extract addresses from previous results
+            const addresses = scanResults.map(result => result.address);
+            
+            fetch('/rescan_memory', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                    valueType, 
+                    scanValue: newValue, 
+                    addresses 
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById('scan-status').textContent = `Error: ${data.error}`;
+                    return;
+                }
+                
+                scanResults = data.results || [];
+                scanHistory.push({ value: newValue, type: valueType, results: scanResults });
+                displayScanResults(data);
+                
+                // Disable rescan if no results
+                document.getElementById('rescan-btn').disabled = scanResults.length === 0;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('scan-status').textContent = 'Rescan failed';
+            });
+        }
+        
+        function displayScanResults(data) {
+            const scanResultsUl = document.getElementById('scan-results');
+            scanResultsUl.innerHTML = '';
+            
+            document.getElementById('scan-status').textContent = `Found ${data.total || 0} results (showing first 100)`;
+            
+            if (data.results && data.results.length > 0) {
                 data.results.forEach(result => {
                     const li = document.createElement('li');
-                    li.textContent = `Address: ${result.address}, Value: ${result.value}`;
-                    scanResults.appendChild(li);
+                    li.textContent = `${result.address}: ${result.value} (${result.type})`;
+                    li.onclick = () => {
+                        document.getElementById('memory-address').value = result.address;
+                        document.getElementById('memory-value').value = result.value;
+                        document.getElementById('modify-type').value = result.type;
+                    };
+                    scanResultsUl.appendChild(li);
                 });
-            });
+            } else {
+                scanResultsUl.innerHTML = '<li>No results found</li>';
+            }
+        }
+        
+        function resetScan() {
+            scanResults = [];
+            scanHistory = [];
+            document.getElementById('scan-results').innerHTML = '';
+            document.getElementById('scan-status').textContent = '';
+            document.getElementById('scan-value').value = '';
+            document.getElementById('rescan-btn').disabled = true;
+            
+            const detectedDiv = document.getElementById('detected-type');
+            if (detectedDiv) detectedDiv.textContent = '';
         }
 
         function modifyMemory() {
-            const address = parseInt(document.getElementById('memory-address').value, 16);
+            const address = document.getElementById('memory-address').value;
             const value = document.getElementById('memory-value').value;
-
+            const valueType = document.getElementById('modify-type').value;
+            
+            if (!address || !value) {
+                alert('Please enter both address and value');
+                return;
+            }
+            
             fetch('/modify_memory', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ address, value })
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ address, value, valueType })
             })
             .then(response => response.json())
             .then(data => {
-                alert('Memory modified successfully');
+                if (data.status === 'success') {
+                    alert('Memory modified successfully');
+                } else {
+                    alert(`Failed to modify memory: ${data.error}`);
+                }
             });
         }
-
-        function togglePauseGame() {
-            const pause = document.getElementById('pause-game').checked;
-            fetch('/toggle_pause', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ pause })
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert(`Game ${pause ? 'paused' : 'resumed'} successfully`);
-            });
-        }
-
-        function changeGameSpeed(gameId, speed) {
-    fetch(`/change_speed`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ gameId, speed })
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert(`Game speed changed to ${speed}x`);
-    });
-}
 
         function refreshProcesses() {
-            location.reload();
+            fetch('/refresh_processes')
+                .then(response => response.json())
+                .then(data => {
+                    const processList = document.getElementById('process-list');
+                    processList.innerHTML = '';
+                    data.processes.forEach(process => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<a href="#" onclick="loadProcess(${process.pid})">${process.name} (PID: ${process.pid})</a>`;
+                        processList.appendChild(li);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error refreshing processes:', error);
+                    location.reload(); // Fallback to page reload
+                });
+        }
+        
+        function refreshJVM() {
+            detectJVM();
+        }
+        
+        function filterProcesses() {
+            const searchTerm = document.getElementById('process-search').value.toLowerCase();
+            const processList = document.getElementById('process-list');
+            const processes = processList.getElementsByTagName('li');
+            
+            for (let i = 0; i < processes.length; i++) {
+                const processText = processes[i].textContent.toLowerCase();
+                if (processText.includes(searchTerm)) {
+                    processes[i].style.display = '';
+                } else {
+                    processes[i].style.display = 'none';
+                }
+            }
         }
 
         function updateSpeedValue(value) {
-    document.getElementById('speed-value').textContent = value;
-}
+            document.getElementById('speed-value').textContent = value + 'x';
+        }
 
-function changeGameSpeed() {
-    const gameId = document.getElementById('game-id').value;
-    const speed = document.getElementById('game-speed').value;
-    fetch('/change_speed', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ gameId, speed })
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert(`Game speed changed to ${speed}x for game ID ${gameId}`);
-    });
-}
-
-        function updateFunctionContent() {
-    const functionContent = document.getElementById('function-content').value;
-    fetch('/update_function_content', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ functionContent })
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert('Function content updated successfully');
-    });
-}
-
-        function uploadScriptFile() {
-    const fileInput = document.getElementById('script-file');
-    const file = fileInput.files[0];
-    const formData = new FormData();
-    formData.append('scriptFile', file);
-
-    fetch('/upload_script', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('upload-result').textContent = data.message;
-    });
-}
-
-
+        function changeGameSpeed() {
+            if (!selectedPid) {
+                alert('Please select a process first');
+                return;
+            }
+            
+            const speed = document.getElementById('game-speed').value;
+            
+            fetch('/change_speed', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ pid: selectedPid, speed })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert(data.message);
+                } else {
+                    alert(`Failed to change speed: ${data.error}`);
+                }
+            });
+        }
+        
+        function resetSpeed() {
+            if (!selectedPid) {
+                alert('Please select a process first');
+                return;
+            }
+            
+            fetch('/reset_speed', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ pid: selectedPid })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    document.getElementById('game-speed').value = 1.0;
+                    document.getElementById('speed-value').textContent = '1.0x';
+                    alert(data.message);
+                } else {
+                    alert(`Failed to reset speed: ${data.error}`);
+                }
+            });
+        }
+        
+        function getModuleBase() {
+            const moduleName = document.getElementById('module-name').value;
+            if (!moduleName) {
+                alert('Please enter module name');
+                return;
+            }
+            
+            fetch('/get_module_base', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ moduleName })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.baseAddress) {
+                    document.getElementById('base-address').textContent = `Base: ${data.baseAddress}`;
+                    document.getElementById('base-addr').value = data.baseAddress;
+                } else {
+                    alert('Module not found');
+                }
+            });
+        }
+        
+        function calculateOffset() {
+            const baseAddr = document.getElementById('base-addr').value;
+            const targetAddr = document.getElementById('target-addr').value;
+            
+            if (!baseAddr || !targetAddr) {
+                alert('Please enter both addresses');
+                return;
+            }
+            
+            fetch('/calculate_offset', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ baseAddress: baseAddr, targetAddress: targetAddr })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('offset-result').textContent = `Offset: ${data.offset}`;
+            });
+        }
+        
+        function resolvePointer() {
+            const baseAddr = document.getElementById('pointer-base').value;
+            const offsetsStr = document.getElementById('pointer-offsets').value;
+            
+            if (!baseAddr || !offsetsStr) {
+                alert('Please enter base address and offsets');
+                return;
+            }
+            
+            const offsets = offsetsStr.split(',').map(s => s.trim());
+            
+            fetch('/resolve_pointer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ baseAddress: baseAddr, offsets })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.finalAddress) {
+                    document.getElementById('pointer-result').textContent = `Final Address: ${data.finalAddress}`;
+                } else {
+                    alert('Failed to resolve pointer chain');
+                }
+            });
+        }
+        
+        function detectJVM() {
+            fetch('/detect_jvm', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('jvm-results');
+                resultsDiv.innerHTML = '';
+                
+                if (data.jvmProcesses && data.jvmProcesses.length > 0) {
+                    data.jvmProcesses.forEach(proc => {
+                        const div = document.createElement('div');
+                        div.innerHTML = `<strong>${proc.name}</strong> (PID: ${proc.pid})<br>Main Class: ${proc.main_class}`;
+                        div.style.padding = '5px';
+                        div.style.borderBottom = '1px solid #eee';
+                        resultsDiv.appendChild(div);
+                    });
+                } else {
+                    resultsDiv.textContent = 'No JVM processes found';
+                }
+            });
+        }
+        
+        function checkForUpdates() {
+            const statusDiv = document.getElementById('update-status');
+            statusDiv.textContent = 'Checking for updates...';
+            
+            fetch('https://api.github.com/repos/spikego/CtrlAssist/releases/latest')
+                .then(response => response.json())
+                .then(data => {
+                    statusDiv.innerHTML = `Latest: ${data.tag_name}<br><a href="${data.html_url}" target="_blank">Download</a>`;
+                })
+                .catch(() => {
+                    statusDiv.textContent = 'Failed to check for updates';
+                });
+        }
+        
+        let captureInterval = null;
+        
+        function hookProcess() {
+            if (!selectedPid) {
+                alert('Please select a process first');
+                return;
+            }
+            
+            fetch('/hook_process', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ pid: selectedPid })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    document.getElementById('hooked-process-info').innerHTML = `<strong>Hooked Process:</strong> PID ${selectedPid}`;
+                    updateHookedProcessInfo();
+                } else {
+                    alert('Failed to hook process: ' + data.error);
+                }
+            });
+        }
+        
+        function unhookProcess() {
+            fetch('/unhook_process', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    document.getElementById('hooked-process-info').innerHTML = '';
+                }
+            });
+        }
+        
+        function updateHookedProcessInfo() {
+            fetch('/get_hooked_process_info')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.processInfo && data.processInfo.pid) {
+                        const info = data.processInfo;
+                        document.getElementById('hooked-process-info').innerHTML = 
+                            `<strong>Hooked:</strong> ${info.name} (PID: ${info.pid}) | Connections: ${info.connections_count || 0} | CPU: ${info.cpu_percent || 0}%`;
+                    }
+                });
+        }
+        
+        function startPacketCapture() {
+            const hookedPid = document.getElementById('hooked-process-info').innerHTML.includes('PID') ? selectedPid : null;
+            
+            fetch('/start_packet_capture', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ pid: hookedPid })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    const message = hookedPid ? `Packet capture started for PID ${hookedPid}` : 'Packet capture started (all processes)';
+                    document.getElementById('packet-results').innerHTML = `<div style="color:green;">${message}</div>`;
+                    captureInterval = setInterval(getPackets, 2000);
+                }
+            });
+        }
+        
+        function stopPacketCapture() {
+            fetch('/stop_packet_capture', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    if (captureInterval) {
+                        clearInterval(captureInterval);
+                        captureInterval = null;
+                    }
+                    document.getElementById('packet-results').innerHTML += '<div style="color:red;">Packet capture stopped.</div>';
+                }
+            });
+        }
+        
+        function clearPackets() {
+            fetch('/clear_packets', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(() => {
+                document.getElementById('packet-results').innerHTML = '';
+                document.getElementById('network-stats').innerHTML = '';
+            });
+        }
+        
+        function getPackets() {
+            fetch('/get_packets')
+                .then(response => response.json())
+                .then(data => {
+                    const resultsDiv = document.getElementById('packet-results');
+                    const statsDiv = document.getElementById('network-stats');
+                    
+                    // Update hooked process info if available
+                    if (data.hookedProcess && data.hookedProcess.pid) {
+                        updateHookedProcessInfo();
+                    }
+                    
+                    // Update statistics
+                    if (data.stats) {
+                        const stats = data.stats;
+                        statsDiv.innerHTML = `Packets: ${stats.total_packets || 0} | Bytes: ${stats.total_bytes || 0} | Protocols: ${Object.keys(stats.protocols || {}).join(', ')}`;
+                    }
+                    
+                    // Update packet list (show only recent packets)
+                    if (data.packets && data.packets.length > 0) {
+                        resultsDiv.innerHTML = ''; // Clear previous
+                        
+                        // Create header
+                        const header = document.createElement('div');
+                        header.innerHTML = 'No. | Time | Source | Destination | Protocol | Length | Info';
+                        header.style.fontWeight = 'bold';
+                        header.style.borderBottom = '2px solid #333';
+                        header.style.padding = '2px';
+                        resultsDiv.appendChild(header);
+                        
+                        // Show last 20 packets
+                        const recentPackets = data.packets.slice(-20);
+                        recentPackets.forEach(packet => {
+                            const div = document.createElement('div');
+                            div.innerHTML = `${packet.no || 0} | ${packet.time} | ${packet.src}:${packet.src_port || ''} | ${packet.dst}:${packet.dst_port || ''} | ${packet.protocol} | ${packet.length || 0} | ${packet.info || ''}`;
+                            div.style.padding = '1px';
+                            div.style.borderBottom = '1px solid #eee';
+                            div.style.cursor = 'pointer';
+                            div.title = `Raw data: ${packet.raw_data || 'N/A'}`;
+                            
+                            // Highlight packets from hooked process
+                            if (packet.pid) {
+                                div.style.backgroundColor = '#e6f3ff';
+                            }
+                            
+                            div.onclick = () => {
+                                let details = `Packet Details:\nNo: ${packet.no}\nTime: ${packet.time}\nSource: ${packet.src}:${packet.src_port || 'N/A'}\nDestination: ${packet.dst}:${packet.dst_port || 'N/A'}\nProtocol: ${packet.protocol}\nLength: ${packet.length}\nTTL: ${packet.ttl || 'N/A'}\nFlags: ${packet.flags || 'N/A'}\nInfo: ${packet.info}`;
+                                if (packet.pid) {
+                                    details += `\nProcess PID: ${packet.pid}`;
+                                }
+                                details += `\nRaw Data: ${packet.raw_data || 'N/A'}`;
+                                alert(details);
+                            };
+                            resultsDiv.appendChild(div);
+                        });
+                    }
+                });
+        }
+        
+        function setNetworkFilter(type, value) {
+            fetch('/set_network_filter', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ type: type, value: value })
+            });
+        }
+        
+        function getNetworkStats() {
+            fetch('/get_network_stats')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.stats) {
+                        const stats = data.stats;
+                        let statsText = `Network Statistics:\n`;
+                        statsText += `Total Packets: ${stats.total_packets || 0}\n`;
+                        statsText += `Total Bytes: ${stats.total_bytes || 0}\n`;
+                        statsText += `Capture Time: ${Math.round(stats.capture_time || 0)}s\n`;
+                        statsText += `Protocols:\n`;
+                        for (const [protocol, count] of Object.entries(stats.protocols || {})) {
+                            statsText += `  ${protocol}: ${count}\n`;
+                        }
+                        alert(statsText);
+                    }
+                });
+        }
+        
+        function startOverlay() {
+            if (!selectedPid) {
+                alert('Please select a process first');
+                return;
+            }
+            
+            fetch('/start_overlay', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ pid: selectedPid })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert('Overlay started');
+                } else {
+                    alert('Failed to start overlay');
+                }
+            });
+        }
+        
+        function stopOverlay() {
+            fetch('/stop_overlay', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Overlay stopped');
+            });
+        }
+        
+        function drawBox() {
+            const x = document.getElementById('box-x').value;
+            const y = document.getElementById('box-y').value;
+            const width = document.getElementById('box-width').value;
+            const height = document.getElementById('box-height').value;
+            const color = document.getElementById('box-color').value;
+            
+            if (!x || !y || !width || !height) {
+                alert('Please enter all box parameters');
+                return;
+            }
+            
+            fetch('/draw_box', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ x, y, width, height, color })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    console.log('Box drawn');
+                }
+            });
+        }
+        
+        function clearOverlay() {
+            fetch('/clear_overlay', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Overlay cleared');
+            });
+        }
+        
+        function exitApplication() {
+            if (confirm('Are you sure you want to exit CtrlAssist?')) {
+                fetch('/exit_app', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                })
+                .then(() => {
+                    window.close();
+                })
+                .catch(() => {
+                    window.close();
+                });
+            }
+        }
     </script>
 </body>
 </html>

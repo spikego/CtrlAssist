@@ -1,0 +1,326 @@
+2025-08-11 13:06:42,550 - __main__ - INFO - Application starting...
+2025-08-11 13:06:46,047 - __main__ - INFO - Application starting...
+2025-08-11 13:06:46,047 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:06:46,058 - __main__ - INFO - Application created successfully
+2025-08-11 13:06:59,977 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:06:59,977 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:07:19,035 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:07:19] "GET / HTTP/1.1" 200 -
+2025-08-11 13:07:19,075 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:07:19] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 13:07:19,484 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:07:19] "GET /static/images/ctrlassist.png HTTP/1.1" 200 -
+2025-08-11 13:07:31,653 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:07:31] "GET /process/4 HTTP/1.1" 200 -
+2025-08-11 13:07:36,332 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:07:36] "GET /process/4 HTTP/1.1" 200 -
+2025-08-11 13:07:37,366 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:07:37] "GET /process/4 HTTP/1.1" 200 -
+2025-08-11 13:08:05,653 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:05] "GET /process/5268 HTTP/1.1" 200 -
+2025-08-11 13:08:06,689 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:06] "GET /process/5268 HTTP/1.1" 200 -
+2025-08-11 13:08:07,724 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:07] "GET /process/5268 HTTP/1.1" 200 -
+2025-08-11 13:08:08,759 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:08] "GET /process/5268 HTTP/1.1" 200 -
+2025-08-11 13:08:10,373 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:10] "GET /process/5268 HTTP/1.1" 200 -
+2025-08-11 13:08:11,549 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:11] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:08:18,157 - app.routes - ERROR - Memory scan error: module 'ctypes.wintypes' has no attribute 'MEMORY_BASIC_INFORMATION'
+2025-08-11 13:08:18,157 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:18] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 13:08:26,207 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:26] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:08:34,421 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:34] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:08:59,061 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:59] "GET / HTTP/1.1" 200 -
+2025-08-11 13:08:59,070 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:08:59,107 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:08:59] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:09:20,666 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:09:20] "GET / HTTP/1.1" 200 -
+2025-08-11 13:09:20,672 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:09:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:09:20,708 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:09:20] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:09:27,287 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:09:27] "GET /process/41100 HTTP/1.1" 200 -
+2025-08-11 13:09:28,323 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:09:28] "GET /process/41100 HTTP/1.1" 200 -
+2025-08-11 13:09:29,358 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:09:29] "GET /process/41100 HTTP/1.1" 200 -
+2025-08-11 13:09:32,533 - app.routes - ERROR - Memory scan error: module 'ctypes.wintypes' has no attribute 'MEMORY_BASIC_INFORMATION'
+2025-08-11 13:09:32,533 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:09:32] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 13:10:04,631 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:04] "[33mPOST /get_module_base HTTP/1.1[0m" 404 -
+2025-08-11 13:10:16,622 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:16] "[33mPOST /get_module_base HTTP/1.1[0m" 404 -
+2025-08-11 13:10:26,581 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:26] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:10:33,845 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:33] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:10:38,550 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:38] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:10:41,988 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:41] "GET /process/39776 HTTP/1.1" 200 -
+2025-08-11 13:10:42,430 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:42] "GET /process/40004 HTTP/1.1" 200 -
+2025-08-11 13:10:42,721 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:42] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:10:43,382 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:43] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:10:43,918 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:43] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:10:44,302 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:44] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:10:45,509 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:45] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:10:45,749 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:45] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:10:48,217 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:48] "GET /process/40004 HTTP/1.1" 200 -
+2025-08-11 13:10:52,469 - app.routes - ERROR - Memory scan error: module 'ctypes.wintypes' has no attribute 'MEMORY_BASIC_INFORMATION'
+2025-08-11 13:10:52,469 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:10:52] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 13:11:56,381 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:11:56] "GET / HTTP/1.1" 200 -
+2025-08-11 13:11:56,389 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:11:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:11:56,430 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:11:56] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:23:23,571 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:23:23] "GET / HTTP/1.1" 200 -
+2025-08-11 13:23:23,579 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:23:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:23:23,614 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:23:23] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:23:42,488 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:23:42] "GET /process/40004 HTTP/1.1" 200 -
+2025-08-11 13:23:43,524 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:23:43] "GET /process/40004 HTTP/1.1" 200 -
+2025-08-11 13:23:44,561 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:23:44] "GET /process/40004 HTTP/1.1" 200 -
+2025-08-11 13:23:48,582 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:23:48] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:24:14,286 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:24:14] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:24:17,973 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:24:17] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 13:25:18,264 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:18] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:18,271 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:22,917 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:22] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:22,924 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:25,781 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:25] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:25,787 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:27,224 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:27] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:27,230 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:27,262 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:27] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:27,841 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:27] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:27,847 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:27,877 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:27] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:28,087 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:28,094 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:28,123 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:28,295 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:28,302 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:28,330 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:28,488 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:28,494 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:28,525 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:28] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:44,752 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:44] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:44,759 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:46,340 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:46] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:46,346 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:46,383 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:46] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:46,791 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:46] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:46,798 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:46,827 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:46] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:47,023 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:47,030 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:47,058 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:47,232 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:47,238 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:47,268 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:47,407 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:47,417 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:47,445 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:25:47,608 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "GET / HTTP/1.1" 200 -
+2025-08-11 13:25:47,615 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:25:47,645 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:25:47] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:26:40,516 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:26:40] "GET / HTTP/1.1" 200 -
+2025-08-11 13:26:40,537 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:26:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:26:51,300 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:26:51] "GET / HTTP/1.1" 200 -
+2025-08-11 13:26:51,311 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:26:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:26:51,352 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:26:51] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 13:31:17,805 - __main__ - INFO - Application starting...
+2025-08-11 13:31:21,180 - __main__ - INFO - Application starting...
+2025-08-11 13:31:21,180 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:31:21,230 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:31:21,230 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:31:25,895 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:31:25] "GET / HTTP/1.1" 200 -
+2025-08-11 13:31:25,948 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:31:25] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 13:31:33,854 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:31:33] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:31:34,886 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:31:34] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:31:35,918 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:31:35] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:31:53,823 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:31:53] "GET / HTTP/1.1" 200 -
+2025-08-11 13:31:53,833 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:31:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:41:24,175 - __main__ - INFO - Application starting...
+2025-08-11 13:41:27,526 - __main__ - INFO - Application starting...
+2025-08-11 13:41:27,526 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:41:27,584 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:41:27,584 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:41:38,098 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:41:38] "GET / HTTP/1.1" 200 -
+2025-08-11 13:41:38,141 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:41:38] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 13:41:40,294 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:41:40] "GET / HTTP/1.1" 200 -
+2025-08-11 13:41:40,301 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:41:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 13:41:40,334 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:41:40] "GET /static/images/ctrlassist.png HTTP/1.1" 200 -
+2025-08-11 13:41:45,152 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:41:45] "POST /exit_app HTTP/1.1" 200 -
+2025-08-11 13:49:36,665 - __main__ - INFO - Application starting...
+2025-08-11 13:49:40,186 - __main__ - INFO - Application starting...
+2025-08-11 13:49:40,186 - __main__ - INFO - Starting application initialization...
+2025-08-11 13:49:40,239 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 13:49:40,239 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 13:49:44,250 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:49:44] "GET / HTTP/1.1" 200 -
+2025-08-11 13:49:44,335 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:49:44] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 13:49:54,640 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:49:54] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:49:56,016 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:49:56] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:50:11,171 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:50:11] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:50:19,665 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:50:19] "GET /process/14152 HTTP/1.1" 200 -
+2025-08-11 13:50:20,697 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:50:20] "GET /process/14152 HTTP/1.1" 200 -
+2025-08-11 13:50:21,729 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:50:21] "GET /process/14152 HTTP/1.1" 200 -
+2025-08-11 13:50:33,830 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:50:33] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:51:05,079 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:51:05] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:51:18,655 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:51:18] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:51:36,928 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:51:36] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 13:51:53,873 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:51:53] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:51:54,911 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:51:54] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:51:55,949 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:51:55] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 13:52:01,081 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:52:01] "POST /start_overlay HTTP/1.1" 200 -
+2025-08-11 13:52:25,806 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:52:25] "POST /stop_overlay HTTP/1.1" 200 -
+2025-08-11 13:52:40,089 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:52:40] "POST /start_overlay HTTP/1.1" 200 -
+2025-08-11 13:52:45,710 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:52:45] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 13:52:50,534 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:52:50] "POST /clear_overlay HTTP/1.1" 200 -
+2025-08-11 13:52:51,482 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:52:51] "POST /stop_overlay HTTP/1.1" 200 -
+2025-08-11 13:59:23,219 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:23] "GET / HTTP/1.1" 200 -
+2025-08-11 13:59:23,239 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 13:59:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:30:46,155 - __main__ - INFO - Application starting...
+2025-08-11 14:30:49,320 - __main__ - INFO - Application starting...
+2025-08-11 14:30:49,321 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:30:49,347 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:30:49,347 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:30:52,995 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:30:52] "GET / HTTP/1.1" 200 -
+2025-08-11 14:30:53,036 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:30:53] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 14:31:01,589 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:01] "GET /process/27188 HTTP/1.1" 200 -
+2025-08-11 14:31:17,784 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:17] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 14:31:37,151 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:37] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:31:45,416 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:45] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:31:45,663 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:45] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:31:45,879 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:45] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:31:46,104 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:46] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:31:46,327 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:46] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:31:51,855 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:51] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:31:52,874 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:52] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 14:31:55,454 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:55] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:31:56,489 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:31:56] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:32:01,423 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:32:01] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 14:35:22,606 - __main__ - INFO - Application starting...
+2025-08-11 14:35:26,116 - __main__ - INFO - Application starting...
+2025-08-11 14:35:26,116 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:35:26,140 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:35:26,140 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:35:29,921 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:35:29] "GET / HTTP/1.1" 200 -
+2025-08-11 14:35:30,004 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:35:30] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 14:36:37,545 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:36:37] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:36:48,600 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:36:48] "GET /process/23348 HTTP/1.1" 200 -
+2025-08-11 14:36:54,646 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:36:54] "[31m[1mPOST /start_overlay HTTP/1.1[0m" 400 -
+2025-08-11 14:37:09,916 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:09] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:37:20,907 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:20] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:37:21,117 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:21] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:37:21,451 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:21] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:37:21,763 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:21] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:37:25,252 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:25] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:26,278 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:26] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 14:37:31,444 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:31] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:32,234 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:32] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:32,971 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:32] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:33,194 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:33] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:33,371 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:33] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:33,546 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:33] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:34,675 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:34] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:37,570 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:37] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:37,755 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:37] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:37,926 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:37] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:38,082 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:38] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:39,426 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:39] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:39,602 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:39] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:39,780 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:39] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:39,973 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:39] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:40,155 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:40] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:40,347 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:40] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:40,539 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:40] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:40,706 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:40] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:40,883 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:40] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:37:58,974 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:37:58] "POST /attach_process HTTP/1.1" 200 -
+2025-08-11 14:38:03,466 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:03,467 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:03] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:05,109 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:05,110 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:05] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:08,099 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:08,101 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:08] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:08,427 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:08,429 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:08] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:08,651 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:08,653 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:08] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:08,850 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:08,853 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:08] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:09,043 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:09,044 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:09] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:09,250 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:09,253 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:09] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:14,963 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:14,964 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:14] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:15,339 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:15,340 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:15] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:15,579 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:15,581 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:15] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:15,787 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:15,789 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:15] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:18,771 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:18,772 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:18] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:19,136 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:19,138 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:19] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:21,291 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:21,292 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:21] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:21,562 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:21,564 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:21] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:23,251 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:23,253 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:23] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:23,459 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:23,462 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:23] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:38:23,651 - app.routes - ERROR - Memory scan error: unsupported operand type(s) for +: 'NoneType' and 'int'
+2025-08-11 14:38:23,653 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:38:23] "[31m[1mPOST /scan_memory HTTP/1.1[0m" 400 -
+2025-08-11 14:51:25,841 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:51:25] "GET / HTTP/1.1" 200 -
+2025-08-11 14:51:25,860 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:51:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:51:37,499 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:51:37] "GET / HTTP/1.1" 200 -
+2025-08-11 14:51:37,514 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:51:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:51:37,589 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:51:37] "GET /static/images/ctrlassist.png HTTP/1.1" 200 -
+2025-08-11 14:51:42,973 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:51:42] "GET / HTTP/1.1" 200 -
+2025-08-11 14:51:42,980 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:51:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:51:43,010 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:51:43] "[36mGET /static/images/ctrlassist.png HTTP/1.1[0m" 304 -
+2025-08-11 14:52:05,457 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:52:05] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:52:06,470 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:52:06] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:52:07,655 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:52:07] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:52:08,000 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:52:08] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:52:17,772 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:52:17] "GET / HTTP/1.1" 200 -
+2025-08-11 14:52:17,817 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:52:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-11 14:52:25,050 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:52:25] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 14:52:26,058 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:52:26] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 14:53:49,968 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:53:49] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 14:54:00,991 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:00] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 14:54:05,735 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:05] "GET /process/10612 HTTP/1.1" 200 -
+2025-08-11 14:54:14,666 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:14] "[31m[1mPOST /start_packet_capture HTTP/1.1[0m" 400 -
+2025-08-11 14:54:17,195 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:17] "[31m[1mPOST /start_packet_capture HTTP/1.1[0m" 400 -
+2025-08-11 14:54:25,835 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:25] "POST /start_overlay HTTP/1.1" 200 -
+2025-08-11 14:54:36,458 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:36] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:54:37,058 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:37] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:54:51,797 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:51] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:54:52,069 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:52] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:54:57,609 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:57] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:54:57,858 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:54:57] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:55:05,098 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:55:05] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 14:55:32,564 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:55:32] "[31m[1mPOST /start_packet_capture HTTP/1.1[0m" 400 -
+2025-08-11 14:55:39,564 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:55:39] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 14:55:55,251 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:55:55] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 14:56:14,704 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:56:14] "POST /change_speed HTTP/1.1" 200 -
+2025-08-11 14:59:09,564 - __main__ - INFO - Application starting...
+2025-08-11 14:59:13,339 - __main__ - INFO - Application starting...
+2025-08-11 14:59:13,339 - __main__ - INFO - Starting application initialization...
+2025-08-11 14:59:13,364 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-11 14:59:13,364 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:59:17,045 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:59:17] "GET / HTTP/1.1" 200 -
+2025-08-11 14:59:17,086 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:59:17] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 14:59:19,508 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:59:19] "GET / HTTP/1.1" 200 -
+2025-08-11 14:59:19,515 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:59:19] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-11 14:59:19,584 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 14:59:19] "GET /static/images/ctrlassist.png HTTP/1.1" 200 -
+2025-08-11 15:00:16,108 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:16] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 15:00:17,145 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:17] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 15:00:18,180 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:18] "POST /detect_jvm HTTP/1.1" 200 -
+2025-08-11 15:00:27,695 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:27] "GET /refresh_processes HTTP/1.1" 200 -
+2025-08-11 15:00:33,057 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:33] "GET /process/16564 HTTP/1.1" 200 -
+2025-08-11 15:00:49,380 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:49] "POST /start_packet_capture HTTP/1.1" 200 -
+2025-08-11 15:00:51,388 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:51] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 15:00:53,403 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:53] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 15:00:55,387 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:55] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 15:00:57,399 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:57] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 15:00:59,387 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:00:59] "GET /get_packets HTTP/1.1" 200 -
+2025-08-11 15:01:00,195 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:00] "POST /stop_packet_capture HTTP/1.1" 200 -
+2025-08-11 15:01:05,686 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:05] "POST /start_overlay HTTP/1.1" 200 -
+2025-08-11 15:01:22,188 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:22] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:01:26,662 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:26] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:01:26,891 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:26] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:01:27,083 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:27] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:01:30,037 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:30] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:01:30,235 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:30] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:01:30,419 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:01:30] "POST /draw_box HTTP/1.1" 200 -
+2025-08-11 15:02:17,475 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:02:17] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -
+2025-08-11 15:02:28,563 - werkzeug - INFO - 127.0.0.1 - - [11/Aug/2025 15:02:28] "[31m[1mPOST /change_speed HTTP/1.1[0m" 400 -

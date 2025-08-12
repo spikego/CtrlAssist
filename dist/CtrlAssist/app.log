@@ -1,8 +1,0 @@
-2025-03-23 14:44:43,625 - __main__ - INFO - Application starting...
-2025-03-23 14:44:43,626 - __main__ - INFO - Starting application initialization...
-2025-03-23 14:44:43,637 - __main__ - INFO - Application created successfully
-2025-03-23 14:44:43,643 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-03-23 14:44:43,644 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-03-23 14:44:51,656 - werkzeug - INFO - 127.0.0.1 - - [23/Mar/2025 14:44:51] "GET / HTTP/1.1" 200 -
-2025-03-23 14:44:51,688 - werkzeug - INFO - 127.0.0.1 - - [23/Mar/2025 14:44:51] "GET /static/style.css HTTP/1.1" 200 -
