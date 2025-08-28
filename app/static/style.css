@@ -126,84 +126,41 @@ input[type="range"] {
     font-size: 12px;
 }
 
+#process-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
 #process-list li {
     padding: 5px;
     border-bottom: 1px solid #eee;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 #process-list li:hover {
-    background-color: #f0f8ff;
+    background-color: #f5f5f5;
 }
 
-#process-list a {
+#process-list li.selected {
+    background-color: #e3f2fd;
+    border-left: 3px solid #007bff;
+}
+
+#process-list li a {
     text-decoration: none;
     color: #333;
+    display: block;
 }
 
-#update-status {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f8f9fa;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.network-controls {
-    margin-bottom: 10px;
-}
-
-.network-controls button {
-    width: auto;
-    display: inline-block;
-    margin: 2px;
-    padding: 5px 10px;
-    font-size: 12px;
-}
-
-.network-filters {
-    margin-bottom: 10px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.network-filters select,
-.network-filters input {
-    margin: 0;
-    padding: 3px;
-    font-size: 11px;
-}
-
-#packet-results div {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#packet-results div:hover {
-    background-color: #e3f2fd;
-}
-
-.scan-buttons {
-    display: flex;
-    gap: 5px;
-    margin-top: 10px;
-}
-
-.scan-buttons button {
-    flex: 1;
-    margin: 0;
+#process-search {
+    width: 100%;
     padding: 8px;
-    font-size: 12px;
-}
-
-.scan-buttons button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-#detected-type {
-    margin-top: 5px;
-    font-style: italic;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

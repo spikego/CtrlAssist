@@ -51,31 +51,114 @@
                 <h2>Memory Scanner</h2>
                 <button onclick="attachProcess()">Attach to Selected Process</button>
                 <br><br>
-                <label for="value-type">Value Type:</label>
-                <select id="value-type" onchange="handleValueTypeChange()">
-                    <option value="auto">Auto Detect</option>
-                    <option value="int32">Int32</option>
-                    <option value="int64">Int64</option>
-                    <option value="float">Float</option>
-                    <option value="double">Double</option>
-                    <option value="string">String</option>
-                </select>
-                <input type="text" id="scan-value" placeholder="Value to scan" oninput="autoDetectType()">
-                <div class="scan-buttons">
-                    <button onclick="scanMemory()">First Scan</button>
-                    <button onclick="rescanMemory()" id="rescan-btn" disabled>Next Scan</button>
-                    <button onclick="resetScan()">Reset</button>
+
+                <div class="scan-controls">
+                    <label for="scan-type">Scan Type:</label>
+                    <select id="scan-type" onchange="handleScanTypeChange()">
+                        <option value="exact_value">Exact Value</option>
+                        <option value="bigger_than">Bigger than...</option>
+                        <option value="smaller_than">Smaller than...</option>
+                        <option value="between">Value between...</option>
+                        <option value="increased_value">Increased Value</option>
+                        <option value="increased_by">Increased by...</option>
+                        <option value="decreased_value">Decreased Value</option>
+                        <option value="decreased_by">Decreased by...</option>
+                        <option value="changed_value">Changed Value</option>
+                        <option value="unchanged_value">Unchanged Value</option>
+                        <option value="unknown_initial">Unknown Initial Value</option>
+                    </select>
+
+                    <div id="value-inputs">
+                        <input type="text" id="scan-value1" placeholder="Value" style="width:80px">
+                        <input type="text" id="scan-value2" placeholder="to" style="width:60px; display:none">
+                    </div>
+
+                    <label for="value-type">Value Type:</label>
+                    <select id="value-type">
+                        <option value="binary">Binary</option>
+                        <option value="byte">Byte</option>
+                        <option value="2bytes">2 Bytes</option>
+                        <option value="4bytes" selected>4 Bytes</option>
+                        <option value="8bytes">8 Bytes</option>
+                        <option value="float">Float</option>
+                        <option value="double">Double</option>
+                        <option value="string">String</option>
+                        <option value="byte_array">Byte Array</option>
+                        <option value="all_types">All Types</option>
+                        <option value="group">Group</option>
+                    </select>
                 </div>
-                <div id="scan-status"></div>
-                <ul id="scan-results"></ul>
+
+                <div class="scan-buttons">
+                    <button onclick="firstScan()">First Scan</button>
+                    <button onclick="nextScan()" id="next-scan-btn" disabled>Next Scan</button>
+                    <button onclick="undoScan()" id="undo-scan-btn" disabled>Undo Scan</button>
+                    <button onclick="resetScan()">New Scan</button>
+                </div>
+
+                <div class="scan-options-toggle">
+                    <button onclick="toggleScanOptions()" id="options-toggle">▼ Scan Options</button>
+                </div>
+
+                <div id="scan-options" style="display:none; border:1px solid #ccc; padding:10px; margin:5px 0;">
+                    <div style="display:flex; flex-wrap:wrap; gap:10px; font-size:12px;">
+                        <div>
+                            <label>Start: </label>
+                            <input type="text" id="start-address" value="00000000" style="width:80px">
+                        </div>
+                        <div>
+                            <label>Stop: </label>
+                            <input type="text" id="stop-address" value="7FFFFFFF" style="width:80px">
+                        </div>
+                        <div>
+                            <label><input type="checkbox" id="readable" checked> Readable</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" id="writable" checked> Writable</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" id="executable" checked> Executable</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" id="copy-on-write"> Copy on Write</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" id="fast-scan" checked> Fast Scan</label>
+                        </div>
+                        <div>
+                            <label>Alignment: </label>
+                            <input type="number" id="alignment" value="1" min="1" style="width:50px">
+                        </div>
+                        <div>
+                            <label>Last Digits: </label>
+                            <input type="number" id="last-digits" value="0" min="0" style="width:50px">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="scan-status" style="margin:10px 0; font-weight:bold;"></div>
+
+                <div class="scan-results-section">
+                    <button onclick="viewScanResults()" id="view-results-btn" disabled>View Results (0)</button>
+                    <button onclick="updateResults()" id="update-results-btn" disabled>Update Values</button>
+                </div>
+
+                <div id="scan-results-display" style="display:none; max-height:200px; overflow-y:auto; border:1px solid #ccc; margin:5px 0;">
+                    <div style="font-weight:bold; padding:5px; border-bottom:1px solid #ccc; font-size:11px;">
+                        Address | Current Value | Previous Value
+                    </div>
+                    <div id="results-list" style="font-family:monospace; font-size:10px;"></div>
+                </div>
             </div>
             <div class="window" id="modify-window">
                 <h2>Memory Editor</h2>
                 <input type="text" id="memory-address" placeholder="Memory Address (hex)">
                 <input type="text" id="memory-value" placeholder="New Value">
                 <select id="modify-type">
-                    <option value="int32">Int32</option>
-                    <option value="int64">Int64</option>
+                    <option value="byte">Byte</option>
+                    <option value="2bytes">2 Bytes</option>
+                    <option value="4bytes" selected>4 Bytes</option>
+                    <option value="8bytes">8 Bytes</option>
                     <option value="float">Float</option>
                     <option value="double">Double</option>
                     <option value="string">String</option>
@@ -180,167 +263,172 @@
 
     <script>
         let selectedPid = null;
-        
+
         function loadProcess(pid) {
-            selectedPid = pid;
+            selectedPid = pid;  // 保存选中的PID
+
+            // 高亮显示选中的进程
+            const processList = document.getElementById('process-list');
+            const items = processList.getElementsByTagName('li');
+            for (let item of items) {
+                item.classList.remove('selected');
+                if (item.textContent.includes(`PID: ${pid}`)) {
+                    item.classList.add('selected');
+                }
+            }
+
+            // 获取进程信息
             fetch(`/process/${pid}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.error) {
-                        alert('Error loading process: ' + data.error);
+                        showError(data.error);
                         return;
                     }
-                    document.getElementById('selected-process').textContent = `Selected Process: ${data.name} (PID: ${data.pid})`;
+
+                    // 更新UI显示进程信息
+                    document.getElementById('scan-status').innerHTML =
+                        `Selected process: ${data.name} (PID: ${data.pid})<br>` +
+                        `CPU: ${data.cpu_usage}% | Memory: ${data.memory_usage}%`;
+
+                    // 更新底部状态栏
+                    document.getElementById('selected-process').textContent =
+                        `Selected Process: ${data.name} (PID: ${data.pid})`;
+
+                    // 更新系统状态信息
                     document.getElementById('cpu-status').textContent = `CPU: ${data.cpu_usage}%`;
-                    document.getElementById('gpu-status').textContent = `GPU: ${data.gpu_usage}%`;
                     document.getElementById('memory-status').textContent = `Memory: ${data.memory_usage}%`;
-                    document.getElementById('disk-status').textContent = `Disk: ${data.disk_usage}%`;
+                    if (data.disk_usage) {
+                        document.getElementById('disk-status').textContent = `Disk: ${data.disk_usage}%`;
+                    }
+
+                    // 启用扫描按钮
+                    document.getElementById('next-scan-btn').disabled = true;
+                    document.getElementById('undo-scan-btn').disabled = true;
+                    document.getElementById('view-results-btn').disabled = true;
+                    document.getElementById('update-results-btn').disabled = true;
                 })
                 .catch(error => {
-                    console.error('Error loading process:', error);
-                    alert('Failed to load process information');
+                    showError('Failed to load process information');
+                    console.error('Error:', error);
                 });
         }
-        
+
+        function showError(message) {
+            const status = document.getElementById('scan-status');
+            status.innerHTML = `<span style="color: red;">${message}</span>`;
+        }
+
         function attachProcess() {
             if (!selectedPid) {
-                alert('Please select a process first');
+                showError('Please select a process first');
                 return;
             }
-            
+
             fetch('/attach_process', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json'
+                },
                 body: JSON.stringify({ pid: selectedPid })
             })
             .then(response => response.json())
             .then(data => {
                 if (data.status === 'success') {
-                    document.getElementById('scan-status').textContent = 'Attached to process';
+                    document.getElementById('scan-status').innerHTML =
+                        `<span style="color: green;">${data.message}</span>`;
                 } else {
-                    alert('Failed to attach to process');
+                    showError(data.message);
                 }
+            })
+            .catch(error => {
+                showError('Failed to attach to process');
+                console.error('Error:', error);
             });
         }
 
-        let scanResults = [];
-        let scanHistory = [];
-        
-        function autoDetectType() {
-            const valueTypeSelect = document.getElementById('value-type');
-            if (valueTypeSelect.value !== 'auto') return;
-            
-            const value = document.getElementById('scan-value').value;
-            if (!value) return;
-            
-            // Auto detect value type
-            if (/^-?\d+$/.test(value)) {
-                const num = parseInt(value);
-                if (num >= -2147483648 && num <= 2147483647) {
-                    document.getElementById('detected-type').textContent = 'Detected: Int32';
-                } else {
-                    document.getElementById('detected-type').textContent = 'Detected: Int64';
-                }
-            } else if (/^-?\d*\.\d+$/.test(value)) {
-                document.getElementById('detected-type').textContent = 'Detected: Float/Double';
+        let scanResultsVisible = false;
+        let currentScanCount = 0;
+
+        function handleScanTypeChange() {
+            const scanType = document.getElementById('scan-type').value;
+            const value2Input = document.getElementById('scan-value2');
+            const value1Input = document.getElementById('scan-value1');
+
+            // Show/hide second value input for "between" scan type
+            if (scanType === 'between') {
+                value2Input.style.display = 'inline';
+                value1Input.placeholder = 'From';
             } else {
-                document.getElementById('detected-type').textContent = 'Detected: String';
+                value2Input.style.display = 'none';
+                value1Input.placeholder = getPlaceholderForScanType(scanType);
             }
-        }
-        
-        function handleValueTypeChange() {
-            const detectedDiv = document.getElementById('detected-type');
-            if (document.getElementById('value-type').value === 'auto') {
-                if (!detectedDiv) {
-                    const div = document.createElement('div');
-                    div.id = 'detected-type';
-                    div.style.fontSize = '12px';
-                    div.style.color = '#666';
-                    document.getElementById('value-type').parentNode.appendChild(div);
-                }
-                autoDetectType();
-            } else if (detectedDiv) {
-                detectedDiv.remove();
-            }
-        }
-        
-        function getActualValueType(value) {
-            const selectedType = document.getElementById('value-type').value;
-            if (selectedType !== 'auto') return selectedType;
-            
-            // Auto detection logic
-            if (/^-?\d+$/.test(value)) {
-                const num = parseInt(value);
-                return (num >= -2147483648 && num <= 2147483647) ? 'int32' : 'int64';
-            } else if (/^-?\d*\.\d+$/.test(value)) {
-                return 'float';
+
+            // Hide value inputs for certain scan types
+            const noValueTypes = ['increased_value', 'decreased_value', 'changed_value', 'unchanged_value', 'unknown_initial'];
+            const valueInputsDiv = document.getElementById('value-inputs');
+            if (noValueTypes.includes(scanType)) {
+                valueInputsDiv.style.display = 'none';
             } else {
-                return 'string';
+                valueInputsDiv.style.display = 'inline';
             }
         }
-        
-        function scanMemory() {
-            const scanValue = document.getElementById('scan-value').value;
-            
-            if (!scanValue) {
+
+        function getPlaceholderForScanType(scanType) {
+            const placeholders = {
+                'exact_value': 'Value',
+                'bigger_than': 'Value',
+                'smaller_than': 'Value',
+                'increased_by': 'Amount',
+                'decreased_by': 'Amount'
+            };
+            return placeholders[scanType] || 'Value';
+        }
+
+        function toggleScanOptions() {
+            const optionsDiv = document.getElementById('scan-options');
+            const toggleBtn = document.getElementById('options-toggle');
+
+            if (optionsDiv.style.display === 'none') {
+                optionsDiv.style.display = 'block';
+                toggleBtn.textContent = '▲ Scan Options';
+            } else {
+                optionsDiv.style.display = 'none';
+                toggleBtn.textContent = '▼ Scan Options';
+            }
+        }
+
+        function firstScan() {
+            const scanType = document.getElementById('scan-type').value;
+            const valueType = document.getElementById('value-type').value;
+            const value1 = document.getElementById('scan-value1').value;
+            const value2 = document.getElementById('scan-value2').value;
+
+            // Validate inputs
+            const noValueTypes = ['increased_value', 'decreased_value', 'changed_value', 'unchanged_value', 'unknown_initial'];
+            if (!noValueTypes.includes(scanType) && !value1) {
                 alert('Please enter a value to scan');
                 return;
             }
-            
-            const valueType = getActualValueType(scanValue);
-            document.getElementById('scan-status').textContent = `Scanning for ${valueType}...`;
-            
-            fetch('/scan_memory', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ valueType, scanValue })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.error) {
-                    document.getElementById('scan-status').textContent = `Error: ${data.error}`;
-                    return;
-                }
-                
-                scanResults = data.results || [];
-                scanHistory = [{ value: scanValue, type: valueType, results: scanResults }];
-                displayScanResults(data);
-                
-                // Enable rescan button
-                document.getElementById('rescan-btn').disabled = scanResults.length === 0;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById('scan-status').textContent = 'Scan failed';
-            });
-        }
-        
-        function rescanMemory() {
-            const newValue = document.getElementById('scan-value').value;
-            
-            if (!newValue) {
-                alert('Please enter a new value to scan');
+
+            if (scanType === 'between' && (!value1 || !value2)) {
+                alert('Please enter both values for range scan');
                 return;
             }
-            
-            if (scanResults.length === 0) {
-                alert('No previous scan results to filter');
-                return;
-            }
-            
-            const valueType = getActualValueType(newValue);
-            document.getElementById('scan-status').textContent = `Rescanning ${scanResults.length} addresses...`;
-            
-            // Extract addresses from previous results
-            const addresses = scanResults.map(result => result.address);
-            
-            fetch('/rescan_memory', {
+
+            // Set scan options
+            setScanOptions();
+
+            document.getElementById('scan-status').textContent = 'First scan in progress...';
+
+            fetch('/first_scan', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ 
-                    valueType, 
-                    scanValue: newValue, 
-                    addresses 
+                body: JSON.stringify({
+                    scanType,
+                    valueType,
+                    value1: value1 || null,
+                    value2: value2 || null
                 })
             })
             .then(response => response.json())
@@ -349,64 +437,252 @@
                     document.getElementById('scan-status').textContent = `Error: ${data.error}`;
                     return;
                 }
-                
-                scanResults = data.results || [];
-                scanHistory.push({ value: newValue, type: valueType, results: scanResults });
-                displayScanResults(data);
-                
-                // Disable rescan if no results
-                document.getElementById('rescan-btn').disabled = scanResults.length === 0;
+
+                currentScanCount = data.count;
+                document.getElementById('scan-status').textContent = `First scan completed. Found ${data.count} results.`;
+                document.getElementById('view-results-btn').textContent = `View Results (${data.count})`;
+
+                // Enable buttons
+                document.getElementById('next-scan-btn').disabled = data.count === 0;
+                document.getElementById('undo-scan-btn').disabled = false;
+                document.getElementById('view-results-btn').disabled = data.count === 0;
+                document.getElementById('update-results-btn').disabled = data.count === 0;
             })
             .catch(error => {
                 console.error('Error:', error);
-                document.getElementById('scan-status').textContent = 'Rescan failed';
+                document.getElementById('scan-status').textContent = 'First scan failed';
             });
         }
-        
-        function displayScanResults(data) {
-            const scanResultsUl = document.getElementById('scan-results');
-            scanResultsUl.innerHTML = '';
-            
-            document.getElementById('scan-status').textContent = `Found ${data.total || 0} results (showing first 100)`;
-            
-            if (data.results && data.results.length > 0) {
-                data.results.forEach(result => {
-                    const li = document.createElement('li');
-                    li.textContent = `${result.address}: ${result.value} (${result.type})`;
-                    li.onclick = () => {
-                        document.getElementById('memory-address').value = result.address;
-                        document.getElementById('memory-value').value = result.value;
-                        document.getElementById('modify-type').value = result.type;
-                    };
-                    scanResultsUl.appendChild(li);
-                });
-            } else {
-                scanResultsUl.innerHTML = '<li>No results found</li>';
+
+        function nextScan() {
+            const scanType = document.getElementById('scan-type').value;
+            const valueType = document.getElementById('value-type').value;
+            const value1 = document.getElementById('scan-value1').value;
+            const value2 = document.getElementById('scan-value2').value;
+
+            if (currentScanCount === 0) {
+                alert('No previous scan results to filter');
+                return;
             }
+
+            // Validate inputs
+            const noValueTypes = ['increased_value', 'decreased_value', 'changed_value', 'unchanged_value'];
+            if (!noValueTypes.includes(scanType) && !value1) {
+                alert('Please enter a value to scan');
+                return;
+            }
+
+            document.getElementById('scan-status').textContent = `Next scan in progress (filtering ${currentScanCount} results)...`;
+
+            fetch('/next_scan', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    scanType,
+                    valueType,
+                    value1: value1 || null,
+                    value2: value2 || null
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById('scan-status').textContent = `Error: ${data.error}`;
+                    return;
+                }
+
+                currentScanCount = data.count;
+                document.getElementById('scan-status').textContent = `Next scan completed. Found ${data.count} results.`;
+                document.getElementById('view-results-btn').textContent = `View Results (${data.count})`;
+
+                // Update buttons
+                document.getElementById('next-scan-btn').disabled = data.count === 0;
+                document.getElementById('view-results-btn').disabled = data.count === 0;
+                document.getElementById('update-results-btn').disabled = data.count === 0;
+
+                // Update results display if visible
+                if (scanResultsVisible) {
+                    viewScanResults();
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('scan-status').textContent = 'Next scan failed';
+            });
         }
-        
+
+        function undoScan() {
+            fetch('/undo_scan', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert('Cannot undo scan: ' + data.error);
+                    return;
+                }
+
+                document.getElementById('scan-status').textContent = 'Scan undone.';
+                // Note: In a full implementation, we'd need to track scan history to restore count
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to undo scan');
+            });
+        }
+
+        function setScanOptions() {
+            const options = {
+                start_address: document.getElementById('start-address').value,
+                stop_address: document.getElementById('stop-address').value,
+                readable: document.getElementById('readable').checked,
+                writable: document.getElementById('writable').checked,
+                executable: document.getElementById('executable').checked,
+                copy_on_write: document.getElementById('copy-on-write').checked,
+                fast_scan: document.getElementById('fast-scan').checked,
+                alignment: document.getElementById('alignment').value,
+                last_digits: document.getElementById('last-digits').value
+            };
+
+            fetch('/set_scan_options', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(options)
+            });
+        }
+
+        function viewScanResults() {
+            const resultsDisplay = document.getElementById('scan-results-display');
+            const valueType = document.getElementById('value-type').value;
+
+            if (scanResultsVisible) {
+                resultsDisplay.style.display = 'none';
+                scanResultsVisible = false;
+                document.getElementById('view-results-btn').textContent = `View Results (${currentScanCount})`;
+                return;
+            }
+
+            // 增加分页控制
+            let currentPage = 0;
+            const pageSize = 1000;  // 增加每页显示的数量
+
+            function loadPage(page) {
+                const start = page * pageSize;
+                fetch(`/get_scan_results?start=${start}&count=${pageSize}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.error) {
+                            alert('Error loading results: ' + data.error);
+                            return;
+                        }
+
+                        const resultsList = document.getElementById('results-list');
+                        if (page === 0) {
+                            resultsList.innerHTML = '';
+                        }
+
+                        data.results.forEach(result => {
+                            const div = document.createElement('div');
+                            div.style.padding = '2px 5px';
+                            div.style.borderBottom = '1px solid #eee';
+                            div.style.cursor = 'pointer';
+
+                            // 格式化显示值，保留previous_value的显示
+                            let currentValue = result.current_value;
+                            let previousValue = result.previous_value;
+
+                            if (valueType === 'float' || valueType === 'double') {
+                                currentValue = parseFloat(currentValue).toFixed(6);
+                                if (previousValue !== null && previousValue !== 'N/A') {
+                                    previousValue = parseFloat(previousValue).toFixed(6);
+                                }
+                            }
+
+                            div.innerHTML = `${result.address} | ${currentValue} | ${previousValue === null ? 'N/A' : previousValue}`;
+
+                            div.onclick = () => {
+                                document.getElementById('memory-address').value = result.address;
+                                document.getElementById('memory-value').value = currentValue;
+                            };
+
+                            resultsList.appendChild(div);
+                        });
+
+                        if (data.results.length === pageSize) {
+                            currentPage++;
+                            loadPage(currentPage);  // 自动加载下一页
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Failed to load scan results');
+                    });
+            }
+
+            resultsDisplay.style.display = 'block';
+            scanResultsVisible = true;
+            document.getElementById('view-results-btn').textContent = `Hide Results (${currentScanCount})`;
+
+            // 开始加载第一页
+            loadPage(0);
+        }
+
+        function updateResults() {
+            const valueType = document.getElementById('value-type').value;
+
+            fetch('/update_scan_results', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ valueType })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert('Error updating results: ' + data.error);
+                    return;
+                }
+
+                document.getElementById('scan-status').textContent = `Updated ${data.updated} values.`;
+
+                // Refresh results display if visible
+                if (scanResultsVisible) {
+                    viewScanResults();
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to update results');
+            });
+        }
+
         function resetScan() {
-            scanResults = [];
-            scanHistory = [];
-            document.getElementById('scan-results').innerHTML = '';
+            currentScanCount = 0;
+            scanResultsVisible = false;
+
             document.getElementById('scan-status').textContent = '';
-            document.getElementById('scan-value').value = '';
-            document.getElementById('rescan-btn').disabled = true;
-            
-            const detectedDiv = document.getElementById('detected-type');
-            if (detectedDiv) detectedDiv.textContent = '';
+            document.getElementById('scan-value1').value = '';
+            document.getElementById('scan-value2').value = '';
+            document.getElementById('scan-results-display').style.display = 'none';
+
+            // Reset buttons
+            document.getElementById('next-scan-btn').disabled = true;
+            document.getElementById('undo-scan-btn').disabled = true;
+            document.getElementById('view-results-btn').disabled = true;
+            document.getElementById('view-results-btn').textContent = 'View Results (0)';
+            document.getElementById('update-results-btn').disabled = true;
         }
 
         function modifyMemory() {
             const address = document.getElementById('memory-address').value;
             const value = document.getElementById('memory-value').value;
             const valueType = document.getElementById('modify-type').value;
-            
+
             if (!address || !value) {
                 alert('Please enter both address and value');
                 return;
             }
-            
+
             fetch('/modify_memory', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -422,10 +698,15 @@
             });
         }
 
+        // Initialize scan type change handler
+        document.addEventListener('DOMContentLoaded', function() {
+            handleScanTypeChange();
+        });
+
         function refreshProcesses() {
             fetch('/refresh_processes')
                 .then(response => response.json())
-                .then(data => {
+                .then(data => {  // 这里修复了语法错误
                     const processList = document.getElementById('process-list');
                     processList.innerHTML = '';
                     data.processes.forEach(process => {
@@ -433,6 +714,16 @@
                         li.innerHTML = `<a href="#" onclick="loadProcess(${process.pid})">${process.name} (PID: ${process.pid})</a>`;
                         processList.appendChild(li);
                     });
+
+                    // 如果之前选中的进程还在列表中，保持其选中状态
+                    if (selectedPid) {
+                        const items = processList.getElementsByTagName('li');
+                        for (let item of items) {
+                            if (item.textContent.includes(`PID: ${selectedPid}`)) {
+                                item.classList.add('selected');
+                            }
+                        }
+                    }
                 })
                 .catch(error => {
                     console.error('Error refreshing processes:', error);
@@ -882,3 +1173,4 @@
     </script>
 </body>
 </html>
+

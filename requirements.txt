@@ -3,3 +3,5 @@ psutil==5.9.6
 Werkzeug==2.3.7
 PyQt6==6.6.0
 PyInstaller==6.2.0
+pymem
+dpkt==1.9.8
